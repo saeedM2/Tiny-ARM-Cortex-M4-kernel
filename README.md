@@ -16,10 +16,10 @@ arm-none-eabi (gcc, ld, GDB, size)
 st-utils (CLI)
 
 # Projet Components:
--src: 
+# src: 
   source code and include/external-lib files
 
--linkerscript.ld:
+# linkerscript.ld:
   describes the memory layout of the chip (vector table, program text, ) and instructs the linker   
 
 # Comments:
