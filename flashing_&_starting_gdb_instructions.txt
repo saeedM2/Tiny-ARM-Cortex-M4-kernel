@@ -1,0 +1,20 @@
+//uploading bin file into board
+st-flash write kernel.bin 0x8000000
+
+
+//Setting up GDB server/clients:
+
+st-util
+
+arm-none-eabi-gdb out.elf
+
+tar extended-remote :4242
+
+load out.elf 
+
+continue
+
+disass 0x8000275,0x8000300
+
+
+
