@@ -10,16 +10,24 @@ SIZE    = arm-none-eabi-size
 
 SOURCES += src/main.c
 SOURCES += src/startup.s
+SOURCES += uart/src/uart_init.c
+SOURCES += system/src/system_init.c
 
 ## Include C headers
-#INCLUDES =
+INCLUDES += -Icommon/include \
+            -Igpio/include \
+					  -Iuart/include \
+					  -Ircc/include \
+					  -Iinterrupt/include \
+						-Isystem/include \
+
 
 ## Create object files (.o)
 OBJS = $(addprefix $(BUILDDIR)/, $(addsuffix .o, $(basename $(SOURCES))))
 
 ## Platform and optimization options
 CFLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO
-CFLAGS += -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP
+CFLAGS += -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -I. $(INCLUDES)
 LFLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -mfpu=fpv4-sp-d16 -T"LinkerScript.ld" -Wl,-Map=build/out.map -Wl,--gc-sections
 
 ELF = $(BUILDDIR)/$(NAME).elf
@@ -27,7 +35,7 @@ HEX = $(BUILDDIR)/$(NAME).hex
 BIN = $(BUILDDIR)/$(NAME).bin
 
 all: build/kernel.elf build/kernel.bin size
-	 
+
 $(BIN): $(ELF)
 	$(OBJCOPY) -O binary $< $@
 

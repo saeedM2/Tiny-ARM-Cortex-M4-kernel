@@ -1,9 +1,7 @@
 /**
   ******************************************************************************
   * @file      startup_stm32.s
-  * @author    Ac6
-  * @version   V1.0.0
-  * @date      12-June-2014
+  * @author
   ******************************************************************************
   */
 
@@ -98,102 +96,3 @@ LoopFillZerobss:
 g_pfnVectors:
 	.word	_estack
 	.word	Reset_Handler
-	.word	0 // NMI_Handler
-	.word	0 // HardFault_Handler
-	.word	0 // MemManage_Handler
-	.word	0 // BusFault_Handler
-	.word	0 // UsageFault_Handler
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0 // SVC_Handler
-	.word	0 // DebugMon_Handler
-	.word	0
-	.word	0 // PendSV_Handler
-	.word	SysTick_Handler
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-	.word	0
-
-
-/************************ (C) COPYRIGHT Ac6 *****END OF FILE****/
