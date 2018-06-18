@@ -12,6 +12,7 @@ SOURCES += src/main.c
 SOURCES += src/startup.s
 SOURCES += uart/src/uart_init.c
 SOURCES += system/src/system_init.c
+SOURCES += cli/src/cli_print.c
 
 ## Include C headers
 INCLUDES += -Icommon/include \
@@ -20,7 +21,7 @@ INCLUDES += -Icommon/include \
 					  -Ircc/include \
 					  -Iinterrupt/include \
 						-Isystem/include \
-
+						-Icli/include \
 
 ## Create object files (.o)
 OBJS = $(addprefix $(BUILDDIR)/, $(addsuffix .o, $(basename $(SOURCES))))
