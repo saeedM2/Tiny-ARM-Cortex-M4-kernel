@@ -12,7 +12,8 @@ SOURCES += src/main.c
 SOURCES += src/startup.s
 SOURCES += uart/src/uart_init.c
 SOURCES += system/src/system_init.c
-SOURCES += cli/src/cli_print.c
+SOURCES += cli/src/cli_communitcate.c
+SOURCES += multi_task/src/context_switch.s
 
 ## Include C headers
 INCLUDES += -Icommon/include \
@@ -22,13 +23,14 @@ INCLUDES += -Icommon/include \
 					  -Iinterrupt/include \
 						-Isystem/include \
 						-Icli/include \
+						-Imulti_task/include \
 
 ## Create object files (.o)
 OBJS = $(addprefix $(BUILDDIR)/, $(addsuffix .o, $(basename $(SOURCES))))
 
 ## Platform and optimization options
 CFLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO
-CFLAGS += -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -I. $(INCLUDES)
+CFLAGS += -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -I. $(INCLUDES)
 LFLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -mfpu=fpv4-sp-d16 -T"LinkerScript.ld" -Wl,-Map=build/out.map -Wl,--gc-sections
 
 ELF = $(BUILDDIR)/$(NAME).elf

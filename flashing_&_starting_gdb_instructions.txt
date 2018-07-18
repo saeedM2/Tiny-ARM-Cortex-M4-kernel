@@ -10,7 +10,7 @@ arm-none-eabi-gdb out.elf
 
 tar extended-remote :4242
 
-load out.elf 
+load out.elf
 
 continue
 
@@ -18,3 +18,8 @@ disass 0x8000275,0x8000300
 
 
 
+
+sudo chmod 666 /dev/ttyUSB0
+chown root:root /dev/ttyUSB0
+
+cu -l /dev/ttyUSB0 -s 9600

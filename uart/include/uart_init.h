@@ -3,6 +3,9 @@
  *
  */
 
+#include <stdbool.h>
+#include <stdio.h>
+
 #include "rcc_clock_reg.h"
 #include "gpio_reg.h"
 #include "uart_reg.h"

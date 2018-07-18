@@ -93,6 +93,8 @@ Discarded input sections
  .group         0x0000000000000000        0x8 build/src/main.o
  .group         0x0000000000000000        0x8 build/src/main.o
  .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
  .text          0x0000000000000000        0x0 build/src/main.o
  .data          0x0000000000000000        0x0 build/src/main.o
  .bss           0x0000000000000000        0x0 build/src/main.o
@@ -104,14 +106,98 @@ Discarded input sections
  .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
  .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
  .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
  .text          0x0000000000000000        0x0 build/uart/src/uart_init.o
  .data          0x0000000000000000        0x0 build/uart/src/uart_init.o
  .bss           0x0000000000000000        0x0 build/uart/src/uart_init.o
  .debug_macro   0x0000000000000000      0x8c8 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x8d build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x3c build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x9c build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x57 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x97 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x30d build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0xfd build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x58 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x1f build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x43 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x20 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x1a3 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x6a build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x1c build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x52 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0xd7 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x161 build/uart/src/uart_init.o
  .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
  .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
  .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
  .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
  .group         0x0000000000000000        0x8 build/system/src/system_init.o
  .group         0x0000000000000000        0x8 build/system/src/system_init.o
  .group         0x0000000000000000        0x8 build/system/src/system_init.o
@@ -121,23 +207,111 @@ Discarded input sections
  .data          0x0000000000000000        0x0 build/system/src/system_init.o
  .bss           0x0000000000000000        0x0 build/system/src/system_init.o
  .debug_macro   0x0000000000000000      0x8c8 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x8d build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x3c build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x9c build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x57 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x97 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x30d build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0xfd build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x58 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x1f build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x43 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x20 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x1a3 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x6a build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x1c build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x52 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0xd7 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x161 build/system/src/system_init.o
  .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
  .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
  .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
  .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_print.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_print.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_print.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_print.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_print.o
- .text          0x0000000000000000        0x0 build/cli/src/cli_print.o
- .data          0x0000000000000000        0x0 build/cli/src/cli_print.o
- .bss           0x0000000000000000        0x0 build/cli/src/cli_print.o
- .debug_macro   0x0000000000000000      0x8c8 build/cli/src/cli_print.o
- .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_print.o
- .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_print.o
- .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_print.o
- .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_print.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .text          0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
+ .data          0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
+ .bss           0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
+ .text.read_uart
+                0x0000000000000000       0x14 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x8c8 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x8d build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x3c build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x9c build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x57 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x97 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x30d build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0xfd build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x58 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x1f build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x43 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x20 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x1a3 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x6a build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x1c build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x52 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0xd7 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x161 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .data          0x0000000000000000        0x0 build/multi_task/src/context_switch.o
+ .bss           0x0000000000000000        0x0 build/multi_task/src/context_switch.o
  .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
  .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
  .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
@@ -339,7 +513,8 @@ LOAD build/src/main.o
 LOAD build/src/startup.o
 LOAD build/uart/src/uart_init.o
 LOAD build/system/src/system_init.o
-LOAD build/cli/src/cli_print.o
+LOAD build/cli/src/cli_communitcate.o
+LOAD build/multi_task/src/context_switch.o
 START GROUP
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a
@@ -350,114 +525,122 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x0000000000000000                _Min_Heap_Size = 0x0
                 0x0000000000000400                _Min_Stack_Size = 0x400
 
-.isr_vector     0x0000000008000000        0x8
+.isr_vector     0x0000000008000000      0x188
                 0x0000000008000000                . = ALIGN (0x4)
  *(.isr_vector)
- .isr_vector    0x0000000008000000        0x8 build/src/startup.o
+ .isr_vector    0x0000000008000000      0x188 build/src/startup.o
                 0x0000000008000000                g_pfnVectors
-                0x0000000008000008                . = ALIGN (0x4)
+                0x0000000008000188                . = ALIGN (0x4)
 
-.text           0x0000000008000008      0x278
-                0x0000000008000008                . = ALIGN (0x4)
+.text           0x0000000008000188      0x2f0
+                0x0000000008000188                . = ALIGN (0x4)
  *(.text)
+ .text          0x0000000008000188       0x12 build/multi_task/src/context_switch.o
+                0x0000000008000188                activate
  *(.text*)
+ *fill*         0x000000000800019a        0x2 
  .text.deregister_tm_clones
-                0x0000000008000008       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x000000000800019c       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .text.register_tm_clones
-                0x0000000008000038       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x00000000080001cc       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .text.__do_global_dtors_aux
-                0x0000000008000070       0x44 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008000204       0x44 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .text.frame_dummy
-                0x00000000080000b4       0x5c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
- .text.main     0x0000000008000110       0x1c build/src/main.o
-                0x0000000008000110                main
+                0x0000000008000248       0x5c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+ .text.first    0x00000000080002a4       0x10 build/src/main.o
+                0x00000000080002a4                first
+ .text.main     0x00000000080002b4       0x40 build/src/main.o
+                0x00000000080002b4                main
  .text.Reset_Handler
-                0x000000000800012c       0x40 build/src/startup.o
-                0x000000000800012c                Reset_Handler
+                0x00000000080002f4       0x40 build/src/startup.o
+                0x00000000080002f4                Reset_Handler
  .text.InitUART
-                0x000000000800016c       0x74 build/uart/src/uart_init.o
-                0x000000000800016c                InitUART
+                0x0000000008000334       0x74 build/uart/src/uart_init.o
+                0x0000000008000334                InitUART
  .text.initialize_core
-                0x00000000080001e0        0xc build/system/src/system_init.o
-                0x00000000080001e0                initialize_core
- .text.print    0x00000000080001ec       0x64 build/cli/src/cli_print.o
-                0x00000000080001ec                print
+                0x00000000080003a8        0xc build/system/src/system_init.o
+                0x00000000080003a8                initialize_core
+ .text.print    0x00000000080003b4       0x48 build/cli/src/cli_communitcate.o
+                0x00000000080003b4                print
+ .text.write_uart
+                0x00000000080003fc       0x4c build/cli/src/cli_communitcate.o
+                0x00000000080003fc                write_uart
  *(.glue_7)
- .glue_7        0x0000000008000250        0x0 linker stubs
+ .glue_7        0x0000000008000448        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008000250        0x0 linker stubs
+ .glue_7t       0x0000000008000448        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008000250        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+ .eh_frame      0x0000000008000448        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  *(.init)
- .init          0x0000000008000250        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
-                0x0000000008000250                _init
- .init          0x000000000800025c        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+ .init          0x0000000008000448        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
+                0x0000000008000448                _init
+ .init          0x0000000008000454        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
  *(.fini)
- .fini          0x0000000008000268        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
-                0x0000000008000268                _fini
- .fini          0x0000000008000274        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
-                0x0000000008000280                . = ALIGN (0x4)
-                0x0000000008000280                _etext = .
+ .fini          0x0000000008000460        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
+                0x0000000008000460                _fini
+ .fini          0x000000000800046c        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+                0x0000000008000478                . = ALIGN (0x4)
+                0x0000000008000478                _etext = .
 
-.vfp11_veneer   0x0000000008000280        0x0
- .vfp11_veneer  0x0000000008000280        0x0 linker stubs
+.vfp11_veneer   0x0000000008000478        0x0
+ .vfp11_veneer  0x0000000008000478        0x0 linker stubs
 
-.v4_bx          0x0000000008000280        0x0
- .v4_bx         0x0000000008000280        0x0 linker stubs
+.v4_bx          0x0000000008000478        0x0
+ .v4_bx         0x0000000008000478        0x0 linker stubs
 
-.iplt           0x0000000008000280        0x0
- .iplt          0x0000000008000280        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+.iplt           0x0000000008000478        0x0
+ .iplt          0x0000000008000478        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
-.rodata         0x0000000008000280       0x18
-                0x0000000008000280                . = ALIGN (0x4)
+.rodata         0x0000000008000478       0x14
+                0x0000000008000478                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008000280       0x16 build/src/main.o
+ .rodata        0x0000000008000478       0x13 build/src/main.o
  *(.rodata*)
-                0x0000000008000298                . = ALIGN (0x4)
- *fill*         0x0000000008000296        0x2 
+                0x000000000800048c                . = ALIGN (0x4)
+ *fill*         0x000000000800048b        0x1 
 
-.rel.dyn        0x0000000008000298        0x0
- .rel.iplt      0x0000000008000298        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+.rel.dyn        0x000000000800048c        0x0
+ .rel.iplt      0x000000000800048c        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
-.ARM.extab      0x0000000008000298        0x0
-                0x0000000008000298                . = ALIGN (0x4)
+.ARM.extab      0x000000000800048c        0x0
+                0x000000000800048c                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008000298                . = ALIGN (0x4)
+                0x000000000800048c                . = ALIGN (0x4)
 
-.ARM            0x0000000008000298        0x0
-                0x0000000008000298                . = ALIGN (0x4)
-                0x0000000008000298                __exidx_start = .
+.ARM            0x000000000800048c        0x0
+                0x000000000800048c                . = ALIGN (0x4)
+                0x000000000800048c                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008000298                __exidx_end = .
-                0x0000000008000298                . = ALIGN (0x4)
+                0x000000000800048c                __exidx_end = .
+                0x000000000800048c                . = ALIGN (0x4)
 
-.preinit_array  0x0000000008000298        0x0
-                0x0000000008000298                . = ALIGN (0x4)
-                0x0000000008000298                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x000000000800048c        0x0
+                0x000000000800048c                . = ALIGN (0x4)
+                0x000000000800048c                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x0000000008000298                PROVIDE (__preinit_array_end, .)
-                0x0000000008000298                . = ALIGN (0x4)
+                0x000000000800048c                PROVIDE (__preinit_array_end, .)
+                0x000000000800048c                . = ALIGN (0x4)
 
-.init_array     0x0000000008000298        0x4
-                0x0000000008000298                . = ALIGN (0x4)
-                0x0000000008000298                PROVIDE (__init_array_start, .)
+.init_array     0x000000000800048c        0x4
+                0x000000000800048c                . = ALIGN (0x4)
+                0x000000000800048c                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008000298        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-                0x000000000800029c                PROVIDE (__init_array_end, .)
-                0x000000000800029c                . = ALIGN (0x4)
+ .init_array    0x000000000800048c        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008000490                PROVIDE (__init_array_end, .)
+                0x0000000008000490                . = ALIGN (0x4)
 
-.fini_array     0x000000000800029c        0x4
-                0x000000000800029c                . = ALIGN (0x4)
-                0x000000000800029c                PROVIDE (__fini_array_start, .)
+.fini_array     0x0000000008000490        0x4
+                0x0000000008000490                . = ALIGN (0x4)
+                0x0000000008000490                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800029c        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-                0x00000000080002a0                PROVIDE (__fini_array_end, .)
-                0x00000000080002a0                . = ALIGN (0x4)
-                0x00000000080002a0                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008000490        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008000494                PROVIDE (__fini_array_end, .)
+                0x0000000008000494                . = ALIGN (0x4)
+                0x0000000008000494                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x0 load address 0x00000000080002a0
+.data           0x0000000020000000        0x0 load address 0x0000000008000494
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -465,21 +648,21 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.jcr            0x0000000020000000        0x0 load address 0x00000000080002a0
+.jcr            0x0000000020000000        0x0 load address 0x0000000008000494
  .jcr           0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
 .tm_clone_table
-                0x0000000020000000        0x0 load address 0x00000000080002a0
+                0x0000000020000000        0x0 load address 0x0000000008000494
  .tm_clone_table
                 0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .tm_clone_table
                 0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
 
-.igot.plt       0x0000000020000000        0x0 load address 0x00000000080002a0
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008000494
  .igot.plt      0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
                 0x0000000020000000                . = ALIGN (0x4)
 
-.bss            0x0000000020000000       0x1c load address 0x00000000080002a0
+.bss            0x0000000020000000       0x1c load address 0x0000000008000494
                 0x0000000020000000                _sbss = .
                 0x0000000020000000                __bss_start__ = _sbss
  *(.bss)
@@ -495,7 +678,7 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x000000002000001c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000001c      0x404 load address 0x00000000080002a0
+                0x000000002000001c      0x404 load address 0x0000000008000494
                 0x0000000020000020                . = ALIGN (0x8)
  *fill*         0x000000002000001c        0x4 
                 [!provide]                        PROVIDE (end, .)
@@ -526,11 +709,13 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
  .ARM.attributes
                 0x00000000000000d1       0x33 build/system/src/system_init.o
  .ARM.attributes
-                0x0000000000000104       0x33 build/cli/src/cli_print.o
+                0x0000000000000104       0x33 build/cli/src/cli_communitcate.o
  .ARM.attributes
-                0x0000000000000137       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
+                0x0000000000000137       0x25 build/multi_task/src/context_switch.o
  .ARM.attributes
-                0x0000000000000167       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+                0x000000000000015c       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
+ .ARM.attributes
+                0x000000000000018c       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
 OUTPUT(build/kernel.elf elf32-littlearm)
 
 .comment        0x0000000000000000       0x25
@@ -539,97 +724,104 @@ OUTPUT(build/kernel.elf elf32-littlearm)
  .comment       0x0000000000000025       0x26 build/src/main.o
  .comment       0x0000000000000025       0x26 build/uart/src/uart_init.o
  .comment       0x0000000000000025       0x26 build/system/src/system_init.o
- .comment       0x0000000000000025       0x26 build/cli/src/cli_print.o
+ .comment       0x0000000000000025       0x26 build/cli/src/cli_communitcate.o
  .comment       0x0000000000000025       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
 
-.debug_info     0x0000000000000000      0x9f3
- .debug_info    0x0000000000000000      0x8bf build/src/main.o
- .debug_info    0x00000000000008bf       0x63 build/src/startup.o
- .debug_info    0x0000000000000922       0x3b build/uart/src/uart_init.o
- .debug_info    0x000000000000095d       0x3b build/system/src/system_init.o
- .debug_info    0x0000000000000998       0x5b build/cli/src/cli_print.o
+.debug_info     0x0000000000000000     0x243f
+ .debug_info    0x0000000000000000      0x8f9 build/src/main.o
+ .debug_info    0x00000000000008f9       0x63 build/src/startup.o
+ .debug_info    0x000000000000095c      0x8ac build/uart/src/uart_init.o
+ .debug_info    0x0000000000001208      0x8ac build/system/src/system_init.o
+ .debug_info    0x0000000000001ab4      0x916 build/cli/src/cli_communitcate.o
+ .debug_info    0x00000000000023ca       0x75 build/multi_task/src/context_switch.o
 
-.debug_abbrev   0x0000000000000000      0x23a
- .debug_abbrev  0x0000000000000000      0x174 build/src/main.o
- .debug_abbrev  0x0000000000000174       0x14 build/src/startup.o
- .debug_abbrev  0x0000000000000188       0x2f build/uart/src/uart_init.o
- .debug_abbrev  0x00000000000001b7       0x2f build/system/src/system_init.o
- .debug_abbrev  0x00000000000001e6       0x54 build/cli/src/cli_print.o
+.debug_abbrev   0x0000000000000000      0x619
+ .debug_abbrev  0x0000000000000000      0x18e build/src/main.o
+ .debug_abbrev  0x000000000000018e       0x14 build/src/startup.o
+ .debug_abbrev  0x00000000000001a2      0x163 build/uart/src/uart_init.o
+ .debug_abbrev  0x0000000000000305      0x163 build/system/src/system_init.o
+ .debug_abbrev  0x0000000000000468      0x19d build/cli/src/cli_communitcate.o
+ .debug_abbrev  0x0000000000000605       0x14 build/multi_task/src/context_switch.o
 
-.debug_aranges  0x0000000000000000       0xa0
+.debug_aranges  0x0000000000000000       0xd8
  .debug_aranges
-                0x0000000000000000       0x20 build/src/main.o
+                0x0000000000000000       0x28 build/src/main.o
  .debug_aranges
-                0x0000000000000020       0x20 build/src/startup.o
+                0x0000000000000028       0x20 build/src/startup.o
  .debug_aranges
-                0x0000000000000040       0x20 build/uart/src/uart_init.o
+                0x0000000000000048       0x20 build/uart/src/uart_init.o
  .debug_aranges
-                0x0000000000000060       0x20 build/system/src/system_init.o
+                0x0000000000000068       0x20 build/system/src/system_init.o
  .debug_aranges
-                0x0000000000000080       0x20 build/cli/src/cli_print.o
+                0x0000000000000088       0x30 build/cli/src/cli_communitcate.o
+ .debug_aranges
+                0x00000000000000b8       0x20 build/multi_task/src/context_switch.o
 
-.debug_ranges   0x0000000000000000       0x40
- .debug_ranges  0x0000000000000000       0x10 build/src/main.o
- .debug_ranges  0x0000000000000010       0x10 build/uart/src/uart_init.o
- .debug_ranges  0x0000000000000020       0x10 build/system/src/system_init.o
- .debug_ranges  0x0000000000000030       0x10 build/cli/src/cli_print.o
+.debug_ranges   0x0000000000000000       0x58
+ .debug_ranges  0x0000000000000000       0x18 build/src/main.o
+ .debug_ranges  0x0000000000000018       0x10 build/uart/src/uart_init.o
+ .debug_ranges  0x0000000000000028       0x10 build/system/src/system_init.o
+ .debug_ranges  0x0000000000000038       0x20 build/cli/src/cli_communitcate.o
 
-.debug_macro    0x0000000000000000     0x1944
- .debug_macro   0x0000000000000000      0x1f5 build/src/main.o
- .debug_macro   0x00000000000001f5      0x8c8 build/src/main.o
- .debug_macro   0x0000000000000abd       0x22 build/src/main.o
- .debug_macro   0x0000000000000adf       0x40 build/src/main.o
- .debug_macro   0x0000000000000b1f       0x8d build/src/main.o
- .debug_macro   0x0000000000000bac       0x3c build/src/main.o
- .debug_macro   0x0000000000000be8       0x9c build/src/main.o
- .debug_macro   0x0000000000000c84       0x16 build/src/main.o
- .debug_macro   0x0000000000000c9a       0x57 build/src/main.o
- .debug_macro   0x0000000000000cf1       0x97 build/src/main.o
- .debug_macro   0x0000000000000d88      0x30d build/src/main.o
- .debug_macro   0x0000000000001095       0xfd build/src/main.o
- .debug_macro   0x0000000000001192       0x10 build/src/main.o
- .debug_macro   0x00000000000011a2       0x58 build/src/main.o
- .debug_macro   0x00000000000011fa       0x1f build/src/main.o
- .debug_macro   0x0000000000001219       0x43 build/src/main.o
- .debug_macro   0x000000000000125c       0x20 build/src/main.o
- .debug_macro   0x000000000000127c      0x1a3 build/src/main.o
- .debug_macro   0x000000000000141f       0x10 build/src/main.o
- .debug_macro   0x000000000000142f       0x6a build/src/main.o
- .debug_macro   0x0000000000001499       0x1c build/src/main.o
- .debug_macro   0x00000000000014b5       0x52 build/src/main.o
- .debug_macro   0x0000000000001507       0x40 build/src/main.o
- .debug_macro   0x0000000000001547       0x10 build/src/main.o
- .debug_macro   0x0000000000001557       0x40 build/src/main.o
- .debug_macro   0x0000000000001597       0xd7 build/src/main.o
- .debug_macro   0x000000000000166e       0x16 build/src/main.o
- .debug_macro   0x0000000000001684      0x161 build/src/main.o
- .debug_macro   0x00000000000017e5       0x16 build/src/main.o
- .debug_macro   0x00000000000017fb       0x40 build/src/main.o
- .debug_macro   0x000000000000183b       0x22 build/src/main.o
- .debug_macro   0x000000000000185d       0x16 build/src/main.o
- .debug_macro   0x0000000000001873       0x43 build/uart/src/uart_init.o
- .debug_macro   0x00000000000018b6       0x47 build/system/src/system_init.o
- .debug_macro   0x00000000000018fd       0x47 build/cli/src/cli_print.o
+.debug_macro    0x0000000000000000     0x1e01
+ .debug_macro   0x0000000000000000      0x200 build/src/main.o
+ .debug_macro   0x0000000000000200      0x8c8 build/src/main.o
+ .debug_macro   0x0000000000000ac8       0x22 build/src/main.o
+ .debug_macro   0x0000000000000aea       0x22 build/src/main.o
+ .debug_macro   0x0000000000000b0c       0x40 build/src/main.o
+ .debug_macro   0x0000000000000b4c       0x8d build/src/main.o
+ .debug_macro   0x0000000000000bd9       0x3c build/src/main.o
+ .debug_macro   0x0000000000000c15       0x9c build/src/main.o
+ .debug_macro   0x0000000000000cb1       0x16 build/src/main.o
+ .debug_macro   0x0000000000000cc7       0x57 build/src/main.o
+ .debug_macro   0x0000000000000d1e       0x97 build/src/main.o
+ .debug_macro   0x0000000000000db5      0x30d build/src/main.o
+ .debug_macro   0x00000000000010c2       0xfd build/src/main.o
+ .debug_macro   0x00000000000011bf       0x10 build/src/main.o
+ .debug_macro   0x00000000000011cf       0x58 build/src/main.o
+ .debug_macro   0x0000000000001227       0x1f build/src/main.o
+ .debug_macro   0x0000000000001246       0x43 build/src/main.o
+ .debug_macro   0x0000000000001289       0x20 build/src/main.o
+ .debug_macro   0x00000000000012a9      0x1a3 build/src/main.o
+ .debug_macro   0x000000000000144c       0x10 build/src/main.o
+ .debug_macro   0x000000000000145c       0x6a build/src/main.o
+ .debug_macro   0x00000000000014c6       0x1c build/src/main.o
+ .debug_macro   0x00000000000014e2       0x52 build/src/main.o
+ .debug_macro   0x0000000000001534       0x40 build/src/main.o
+ .debug_macro   0x0000000000001574       0x10 build/src/main.o
+ .debug_macro   0x0000000000001584       0x40 build/src/main.o
+ .debug_macro   0x00000000000015c4       0xd7 build/src/main.o
+ .debug_macro   0x000000000000169b       0x16 build/src/main.o
+ .debug_macro   0x00000000000016b1      0x161 build/src/main.o
+ .debug_macro   0x0000000000001812       0x16 build/src/main.o
+ .debug_macro   0x0000000000001828       0x40 build/src/main.o
+ .debug_macro   0x0000000000001868       0x22 build/src/main.o
+ .debug_macro   0x000000000000188a       0x10 build/src/main.o
+ .debug_macro   0x000000000000189a       0x16 build/src/main.o
+ .debug_macro   0x00000000000018b0      0x1c3 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000001a73      0x1c7 build/system/src/system_init.o
+ .debug_macro   0x0000000000001c3a      0x1c7 build/cli/src/cli_communitcate.o
 
-.debug_line     0x0000000000000000      0x704
- .debug_line    0x0000000000000000      0x396 build/src/main.o
- .debug_line    0x0000000000000396       0x59 build/src/startup.o
- .debug_line    0x00000000000003ef       0xef build/uart/src/uart_init.o
- .debug_line    0x00000000000004de      0x10e build/system/src/system_init.o
- .debug_line    0x00000000000005ec      0x118 build/cli/src/cli_print.o
+.debug_line     0x0000000000000000      0xf56
+ .debug_line    0x0000000000000000      0x3de build/src/main.o
+ .debug_line    0x00000000000003de       0x59 build/src/startup.o
+ .debug_line    0x0000000000000437      0x371 build/uart/src/uart_init.o
+ .debug_line    0x00000000000007a8      0x390 build/system/src/system_init.o
+ .debug_line    0x0000000000000b38      0x3cb build/cli/src/cli_communitcate.o
+ .debug_line    0x0000000000000f03       0x53 build/multi_task/src/context_switch.o
 
-.debug_str      0x0000000000000000     0x7141
- .debug_str     0x0000000000000000     0x70e0 build/src/main.o
-                                       0x72ae (size before relaxing)
- .debug_str     0x00000000000070e0       0x1e build/uart/src/uart_init.o
-                                       0x2826 (size before relaxing)
- .debug_str     0x00000000000070fe       0x29 build/system/src/system_init.o
-                                       0x2831 (size before relaxing)
- .debug_str     0x0000000000007127       0x1a build/cli/src/cli_print.o
-                                       0x282e (size before relaxing)
+.debug_str      0x0000000000000000     0x71ca
+ .debug_str     0x0000000000000000     0x7146 build/src/main.o
+                                       0x7314 (size before relaxing)
+ .debug_str     0x0000000000007146       0x1e build/uart/src/uart_init.o
+                                       0x7306 (size before relaxing)
+ .debug_str     0x0000000000007164       0x29 build/system/src/system_init.o
+                                       0x7311 (size before relaxing)
+ .debug_str     0x000000000000718d       0x3d build/cli/src/cli_communitcate.o
+                                       0x732b (size before relaxing)
 
-.debug_frame    0x0000000000000000       0xc4
- .debug_frame   0x0000000000000000       0x30 build/src/main.o
- .debug_frame   0x0000000000000030       0x30 build/uart/src/uart_init.o
- .debug_frame   0x0000000000000060       0x2c build/system/src/system_init.o
- .debug_frame   0x000000000000008c       0x38 build/cli/src/cli_print.o
+.debug_frame    0x0000000000000000      0x12c
+ .debug_frame   0x0000000000000000       0x4c build/src/main.o
+ .debug_frame   0x000000000000004c       0x30 build/uart/src/uart_init.o
+ .debug_frame   0x000000000000007c       0x2c build/system/src/system_init.o
+ .debug_frame   0x00000000000000a8       0x84 build/cli/src/cli_communitcate.o
