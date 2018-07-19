@@ -14,6 +14,7 @@ SOURCES += uart/src/uart_init.c
 SOURCES += system/src/system_init.c
 SOURCES += cli/src/cli_communitcate.c
 SOURCES += multi_task/src/context_switch.s
+SOURCES += multi_task/src/task.c
 
 ## Include C headers
 INCLUDES += -Icommon/include \

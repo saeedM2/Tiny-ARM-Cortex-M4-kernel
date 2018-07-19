@@ -3,6 +3,10 @@
  *
  */
 
+/* submodule includes */
+
 #include "uart_init.h"
+
+/* function declarations */
 
 void initialize_core(void);

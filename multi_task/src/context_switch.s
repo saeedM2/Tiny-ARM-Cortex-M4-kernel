@@ -25,7 +25,7 @@
 activate:
       /* switch to the process stack */
       ldmfd r0!, {ip,lr}                                                        /* get control val and func address. r0 points to begining of an array address. r0! is used like a stack to pop */
-      msr psp, r0                                                               /* function pointer address */
+      msr psp, r0                                                               /* function pointer address. The stack pointer points to the initial memory location of our created task stack */
       msr control, ip                                                           /* switch to process mode. Using control[1] we can switch between psp and msp */
 
       /* software stack frame. load user state */

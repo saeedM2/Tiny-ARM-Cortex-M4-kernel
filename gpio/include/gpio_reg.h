@@ -1,3 +1,12 @@
+/*
+ * gpio_reg.h
+ *
+ */
+
+
+
+/* GPIO macro definition for register init and configs */
+
 #define GPIOA_BASE_ADDRESS          0x40020000
 #define GPIOA_MODER                 GPIOA_BASE_ADDRESS + 0x00 // GPIO port mode register
 #define GPIOA_OSPEEDR               GPIOA_BASE_ADDRESS + 0x08 // GPIO port output speed register

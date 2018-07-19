@@ -3,10 +3,22 @@
  *
  */
 
+/* submodule includes */
+
 #include "cli_communitcate.h"
+
+/* function definitions */
 
 /***************************************************
  * print
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
  *
  * Note: on a Unix system we must properly handle CR
  *       and LF. CR and LF might be handled differently
@@ -33,6 +45,17 @@ void print(char *string)
 /***************************************************
  * read_uart
  *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note:
+ *
+ *
  ***************************************************/
 bool read_uart(char **buf)
 {
@@ -44,6 +67,17 @@ bool read_uart(char **buf)
 
 /***************************************************
  * write_uart
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note:
+ *
  *
  ***************************************************/
  bool write_uart(char c)
