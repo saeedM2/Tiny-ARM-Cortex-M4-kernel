@@ -5,7 +5,7 @@
 
 /* function declarations */
 
-void activate(unsigned int *task_stack);
+void activate(uint32_t* task_stack);
 
 #if 0
 int currentTaskTCB; /* This var is of type tskTaskControlBlock */

@@ -7,32 +7,9 @@
 
 #include "task.h"
 
-/* macro definitions */
-
-#define ARM_STACK_POPS            16                                            /* unstacks 16 registers (r0 - r15) */
-#define STACK_SIZE_WORDS          256                                           /* each task stack is 256 words (1024 bytes) in size */
-#define SET_PSP_MASK              0x3                                           /* this mask switches msp to psp */
-#define MAX_TASK_NUMBER           10                                            /* max number of tasks allowed on this kernel */
-
 /* global vars */
-PRIVATE struct task_t* task_arr[MAX_TASK_NUMBER];
 
-/* enumerations */
-
-enum task_state
-{
-  TASK_FREE,
-  TASK_READY,
-  TASK_RUNNING
-};
-
-/* type definitions */
-
-struct task_t
-{
-  uint32_t* sp;
-  enum task_state state;
-};
+PRIVATE struct task_t task_arr[MAX_TASK_NUMBER];
 
 /* function definitions */
 
@@ -55,7 +32,7 @@ void task_init()
 {
   for(int i = 0; i < MAX_TASK_NUMBER; i++)
   {
-    task_arr[i] = TASK_FREE;
+    task_arr[i].state = TASK_FREE;
   }
 }
 
@@ -74,9 +51,30 @@ void task_init()
  *
  *
  ***************************************************/
-void task_spawn()
-{
 
+bool task_spawn()
+{
+  uint8_t taskSize = 0;
+
+  while( taskSize <= MAX_TASK_NUMBER && task_arr[taskSize].state != TASK_FREE )
+  {
+    taskSize++;
+  }
+
+  if( taskSize >= MAX_TASK_NUMBER && task_arr[taskSize].state != TASK_FREE)
+  {
+      print("ERROR: ");
+
+      return false;
+  }
+
+  /* manually allocate task stack */
+  task_arr[taskSize].sp = (void*)(MAX_SP_ADDRESS - (MAX_SP_SIZE_BYTES*taskSize));
+
+  /* populate stack frame with vals for debugging purposes */
+  //task_arr[taskSize].sp =
+
+  return true;
 }
 
 /***************************************************

@@ -7,8 +7,13 @@
 
 #include "uart_init.h"
 
+/* macro definitions */
+
+#define MAX_STR_BUFFER      1024
+
 /* function declarations */
 
-void print(char *string);
-bool read_uart(char **buf);
-bool write_uart(char c);
+void print(char* formatBuf, ...);
+void printUart(char *string);
+bool readUartBuf(char **buf);
+bool writeUartBuf(char c);

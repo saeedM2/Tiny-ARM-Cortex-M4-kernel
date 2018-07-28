@@ -1,23 +1,81 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
-                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o (atexit)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o (atexit)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
-                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o (exit)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o (exit)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
-                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o (__libc_fini_array)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o (__libc_fini_array)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
                               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o) (_global_impure_ptr)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o (__libc_init_array)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o (__libc_init_array)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
-                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o (memset)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o (memset)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
                               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o) (__register_exitproc)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
                               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o) (__call_exitprocs)
 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lock.o)
                               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o) (__retarget_lock_acquire_recursive)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o (initialise_monitor_handles)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o) (_exit)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o) (_kill)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o) (__errno)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o) (__sinit)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o) (_fwalk)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o) (_malloc_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o) (__malloc_lock)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o) (_sbrk_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o) (__sread)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o) (strlen)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o) (_write_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o) (_close_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o) (_fclose_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o) (__sflush_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o) (_free_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o) (_lseek_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o) (_read_r)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o) (errno)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+                              build/common/src/lprintf.o (__aeabi_dsub)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+                              build/common/src/lprintf.o (__aeabi_dmul)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+                              build/common/src/lprintf.o (__aeabi_dcmpeq)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+                              build/common/src/lprintf.o (__aeabi_d2iz)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+                              build/common/src/lprintf.o (__aeabi_d2uiz)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+                              build/common/src/lprintf.o (__aeabi_uldivmod)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o) (__clzdi2)
+/home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
+                              /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o) (__clzsi2)
 
 Allocating common symbols
 Common symbol       size              file
@@ -26,6 +84,7 @@ __lock___atexit_recursive_mutex
                     0x1               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lock.o)
 __lock___arc4random_mutex
                     0x1               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lock.o)
+errno               0x4               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
 __lock___env_recursive_mutex
                     0x1               /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lock.o)
 __lock___sinit_recursive_mutex
@@ -50,357 +109,18 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .data.__dso_handle
                 0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
- .text          0x0000000000000000      0x104 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .ARM.extab     0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .ARM.exidx     0x0000000000000000        0x8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .debug_line    0x0000000000000000       0xbf /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .debug_info    0x0000000000000000       0xcb /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .debug_abbrev  0x0000000000000000       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
+ .text          0x0000000000000000      0x150 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+ .data          0x0000000000000000      0x110 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+ .debug_line    0x0000000000000000       0xdb /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+ .debug_info    0x0000000000000000       0xcb /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+ .debug_abbrev  0x0000000000000000       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
  .debug_aranges
-                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
  .ARM.attributes
-                0x0000000000000000       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .group         0x0000000000000000        0x8 build/src/main.o
- .text          0x0000000000000000        0x0 build/src/main.o
- .data          0x0000000000000000        0x0 build/src/main.o
- .bss           0x0000000000000000        0x0 build/src/main.o
- .text          0x0000000000000000       0x14 build/src/startup.o
- .data          0x0000000000000000        0x0 build/src/startup.o
- .bss           0x0000000000000000        0x0 build/src/startup.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
- .text          0x0000000000000000        0x0 build/uart/src/uart_init.o
- .data          0x0000000000000000        0x0 build/uart/src/uart_init.o
- .bss           0x0000000000000000        0x0 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000      0x8c8 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x8d build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x3c build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x9c build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x57 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x97 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000      0x30d build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0xfd build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x58 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x1f build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x43 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x20 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000      0x1a3 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x6a build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x1c build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x52 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0xd7 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000      0x161 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0xef build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000      0x1df build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
- .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/system/src/system_init.o
- .text          0x0000000000000000        0x0 build/system/src/system_init.o
- .data          0x0000000000000000        0x0 build/system/src/system_init.o
- .bss           0x0000000000000000        0x0 build/system/src/system_init.o
- .debug_macro   0x0000000000000000      0x8c8 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x8d build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x3c build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x9c build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x57 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x97 build/system/src/system_init.o
- .debug_macro   0x0000000000000000      0x30d build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0xfd build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x58 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x1f build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x43 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x20 build/system/src/system_init.o
- .debug_macro   0x0000000000000000      0x1a3 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x6a build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x1c build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x52 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0xd7 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
- .debug_macro   0x0000000000000000      0x161 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0xef build/system/src/system_init.o
- .debug_macro   0x0000000000000000      0x1df build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
- .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
- .text          0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
- .data          0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
- .bss           0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
- .text.read_uart
-                0x0000000000000000       0x14 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000      0x8c8 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x8d build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x3c build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x9c build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x57 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x97 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000      0x30d build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0xfd build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x58 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x1f build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x43 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x20 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000      0x1a3 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x6a build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x1c build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x52 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0xd7 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000      0x161 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0xef build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000      0x1df build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
- .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
- .data          0x0000000000000000        0x0 build/multi_task/src/context_switch.o
- .bss           0x0000000000000000        0x0 build/multi_task/src/context_switch.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .group         0x0000000000000000        0x8 build/multi_task/src/task.o
- .text          0x0000000000000000        0x0 build/multi_task/src/task.o
- .data          0x0000000000000000        0x0 build/multi_task/src/task.o
- .bss           0x0000000000000000        0x0 build/multi_task/src/task.o
- .debug_info    0x0000000000000000      0x893 build/multi_task/src/task.o
- .debug_abbrev  0x0000000000000000      0x147 build/multi_task/src/task.o
- .debug_aranges
-                0x0000000000000000       0x18 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000      0x1bd build/multi_task/src/task.o
- .debug_macro   0x0000000000000000      0x8c8 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x22 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x22 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x40 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x8d build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x3c build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x9c build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x57 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x97 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000      0x30d build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0xfd build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x58 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x1f build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x43 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x20 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000      0x1a3 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x6a build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x1c build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x52 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x40 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x40 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0xd7 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000      0x161 build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0xef build/multi_task/src/task.o
- .debug_macro   0x0000000000000000      0x1df build/multi_task/src/task.o
- .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
- .debug_line    0x0000000000000000      0x2f8 build/multi_task/src/task.o
- .debug_str     0x0000000000000000     0x79e5 build/multi_task/src/task.o
- .comment       0x0000000000000000       0x26 build/multi_task/src/task.o
- .ARM.attributes
-                0x0000000000000000       0x37 build/multi_task/src/task.o
+                0x0000000000000000       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
  .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
  .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
  .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
@@ -577,6 +297,930 @@ Discarded input sections
  .ARM.attributes
                 0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lock.o)
  COMMON         0x0000000000000000       0x21 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lock.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text.findslot
+                0x0000000000000000       0x6c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text.checkerror.part.0
+                0x0000000000000000       0x34 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text.initialise_monitor_handles
+                0x0000000000000000      0x104 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._swiread
+                0x0000000000000000       0x4c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._read    0x0000000000000000       0x9c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._swilseek
+                0x0000000000000000      0x100 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._lseek   0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._swiwrite
+                0x0000000000000000       0x4c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._write   0x0000000000000000       0xd4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._swiclose
+                0x0000000000000000       0x4c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._close   0x0000000000000000       0xb0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._getpid  0x0000000000000000        0x8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._sbrk    0x0000000000000000       0x84 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._swistat
+                0x0000000000000000       0x80 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._fstat   0x0000000000000000       0x2c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._stat    0x0000000000000000       0x68 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._swiopen
+                0x0000000000000000      0x148 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._open    0x0000000000000000       0x1c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._link    0x0000000000000000       0x1c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._unlink  0x0000000000000000       0x7c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._gettimeofday
+                0x0000000000000000       0x48 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._clock   0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._times   0x0000000000000000       0x3c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._isatty  0x0000000000000000       0x70 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._system  0x0000000000000000       0x88 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text._rename  0x0000000000000000       0x68 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .bss.heap_end.6157
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .bss.monitor_stderr
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .bss.monitor_stdin
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .bss.monitor_stdout
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .bss.openfiles
+                0x0000000000000000       0xa0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .data.__heap_limit
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .rodata.initialise_monitor_handles.str1.4
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_info    0x0000000000000000     0x205e /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_abbrev  0x0000000000000000      0x47c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_loc     0x0000000000000000     0x145f /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_aranges
+                0x0000000000000000       0xe8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_ranges  0x0000000000000000      0x458 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_line    0x0000000000000000      0x7be /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_str     0x0000000000000000      0x9ac /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .debug_frame   0x0000000000000000      0x484 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-syscalls.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .text._exit    0x0000000000000000       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_info    0x0000000000000000       0x70 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_abbrev  0x0000000000000000       0x71 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_loc     0x0000000000000000       0x21 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_line    0x0000000000000000       0x7d /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_str     0x0000000000000000       0xa1 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .debug_frame   0x0000000000000000       0x2c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_exit.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .text._kill    0x0000000000000000       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_info    0x0000000000000000      0x150 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_abbrev  0x0000000000000000       0xe1 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_loc     0x0000000000000000       0x6e /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_line    0x0000000000000000       0x91 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_str     0x0000000000000000      0x1a3 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .debug_frame   0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a(rdimon-_kill.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .text.__errno  0x0000000000000000       0x10 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .debug_info    0x0000000000000000      0x8d9 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .debug_abbrev  0x0000000000000000      0x176 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .debug_line    0x0000000000000000      0x15a /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .debug_str     0x0000000000000000      0x56f /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__fp_lock
+                0x0000000000000000       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x0000000000000000       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__sfmoreglue
+                0x0000000000000000       0x50 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text._cleanup
+                0x0000000000000000       0x24 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__sinit  0x0000000000000000      0x1c8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__sfp    0x0000000000000000      0x120 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__sfp_lock_release
+                0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__sinit_lock_acquire
+                0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__sinit_lock_release
+                0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__fp_lock_all
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text.__fp_unlock_all
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .rodata.__sf_fake_stderr
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .rodata.__sf_fake_stdin
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .rodata.__sf_fake_stdout
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_info    0x0000000000000000     0x11a3 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_abbrev  0x0000000000000000      0x362 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_loc     0x0000000000000000      0x395 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_aranges
+                0x0000000000000000       0x80 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_ranges  0x0000000000000000      0x128 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_line    0x0000000000000000      0x3de /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_str     0x0000000000000000      0x8fd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000000000      0x1c4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-findfp.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .text._fwalk   0x0000000000000000       0x84 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .text._fwalk_reent
+                0x0000000000000000       0x8c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_info    0x0000000000000000      0xbdd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_abbrev  0x0000000000000000      0x1dd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_loc     0x0000000000000000      0x27f /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_aranges
+                0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_ranges  0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_line    0x0000000000000000      0x222 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_str     0x0000000000000000      0x730 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .debug_frame   0x0000000000000000       0x80 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fwalk.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .text._malloc_r
+                0x0000000000000000      0x78c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .bss.__malloc_current_mallinfo
+                0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .bss.__malloc_max_sbrked_mem
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .bss.__malloc_max_total_mem
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .bss.__malloc_top_pad
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .data.__malloc_av_
+                0x0000000000000000      0x408 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .data.__malloc_sbrk_base
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .data.__malloc_trim_threshold
+                0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_info    0x0000000000000000      0xdee /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_abbrev  0x0000000000000000      0x288 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_loc     0x0000000000000000      0xb2a /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_ranges  0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_line    0x0000000000000000      0x3cf /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_str     0x0000000000000000      0x822 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .debug_frame   0x0000000000000000       0x84 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mallocr.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .text.__malloc_lock
+                0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .text.__malloc_unlock
+                0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_info    0x0000000000000000      0x91b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_abbrev  0x0000000000000000      0x1a7 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_loc     0x0000000000000000       0x42 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_aranges
+                0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_ranges  0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_line    0x0000000000000000      0x161 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_str     0x0000000000000000      0x5ec /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000000000       0x48 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x0000000000000000       0x44 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_info    0x0000000000000000      0x967 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x0000000000000000      0x1dd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_loc     0x0000000000000000       0x66 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_line    0x0000000000000000      0x1c8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_str     0x0000000000000000      0x5a0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000000       0x3c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .text.__sread  0x0000000000000000       0x34 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .text.__seofread
+                0x0000000000000000        0x8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .text.__swrite
+                0x0000000000000000       0x58 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .text.__sseek  0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .text.__sclose
+                0x0000000000000000       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_info    0x0000000000000000      0xd66 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_abbrev  0x0000000000000000      0x225 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_loc     0x0000000000000000      0x2d6 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_aranges
+                0x0000000000000000       0x40 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_ranges  0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_line    0x0000000000000000      0x24c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_str     0x0000000000000000      0x784 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .debug_frame   0x0000000000000000       0x9c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-stdio.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .text.strlen   0x0000000000000000       0x60 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_info    0x0000000000000000      0x8c3 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_abbrev  0x0000000000000000      0x16f /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_loc     0x0000000000000000       0x21 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_line    0x0000000000000000      0x1b3 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_str     0x0000000000000000      0x56a /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .debug_frame   0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .text._write_r
+                0x0000000000000000       0x48 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_info    0x0000000000000000      0x9a6 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_abbrev  0x0000000000000000      0x1dd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_loc     0x0000000000000000       0xa5 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_ranges  0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_line    0x0000000000000000      0x1c6 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_str     0x0000000000000000      0x59d /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000000       0x34 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-writer.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .text._close_r
+                0x0000000000000000       0x3c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_info    0x0000000000000000      0x95d /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_abbrev  0x0000000000000000      0x1d8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_loc     0x0000000000000000       0x4d /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_ranges  0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_line    0x0000000000000000      0x1c6 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_str     0x0000000000000000      0x58d /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .debug_frame   0x0000000000000000       0x34 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .text._fclose_r
+                0x0000000000000000      0x198 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .text.fclose   0x0000000000000000       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_info    0x0000000000000000      0xc1e /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_abbrev  0x0000000000000000      0x256 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_loc     0x0000000000000000      0x17c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_aranges
+                0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_ranges  0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_line    0x0000000000000000      0x249 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_str     0x0000000000000000      0x7b9 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .debug_frame   0x0000000000000000       0x58 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fclose.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .text.__sflush_r
+                0x0000000000000000      0x20c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .text._fflush_r
+                0x0000000000000000       0xf0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .text.fflush   0x0000000000000000       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_info    0x0000000000000000      0xcdf /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_abbrev  0x0000000000000000      0x2a6 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_loc     0x0000000000000000      0x3d8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_aranges
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_ranges  0x0000000000000000       0x50 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_line    0x0000000000000000      0x2e8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_str     0x0000000000000000      0x7b0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000000000       0xac /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-fflush.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .text._malloc_trim_r
+                0x0000000000000000      0x100 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .text._free_r  0x0000000000000000      0x2e0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_info    0x0000000000000000      0xca4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_abbrev  0x0000000000000000      0x22e /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_loc     0x0000000000000000      0x530 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_aranges
+                0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_ranges  0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_line    0x0000000000000000      0x2c1 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_str     0x0000000000000000      0x79b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .debug_frame   0x0000000000000000       0x70 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-freer.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .text._lseek_r
+                0x0000000000000000       0x48 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_info    0x0000000000000000      0x989 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_abbrev  0x0000000000000000      0x1e7 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_loc     0x0000000000000000       0xa5 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_ranges  0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_line    0x0000000000000000      0x1c6 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_str     0x0000000000000000      0x59b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .debug_frame   0x0000000000000000       0x34 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .text._read_r  0x0000000000000000       0x48 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_info    0x0000000000000000      0x99f /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_abbrev  0x0000000000000000      0x1d8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_loc     0x0000000000000000       0xa5 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_ranges  0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_line    0x0000000000000000      0x1c5 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_str     0x0000000000000000      0x59b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .debug_frame   0x0000000000000000       0x34 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x0000000000000000       0x2c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x0000000000000000      0x15c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_info    0x0000000000000000      0xa77 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_abbrev  0x0000000000000000      0x22f /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_loc     0x0000000000000000       0xef /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_aranges
+                0x0000000000000000       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_ranges  0x0000000000000000       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_line    0x0000000000000000      0x1f2 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_str     0x0000000000000000      0x599 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .comment       0x0000000000000000       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .debug_frame   0x0000000000000000       0x64 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ COMMON         0x0000000000000000        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a(lib_a-reent.o)
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .group         0x0000000000000000        0x8 build/src/main.o
+ .text          0x0000000000000000        0x0 build/src/main.o
+ .data          0x0000000000000000        0x0 build/src/main.o
+ .bss           0x0000000000000000        0x0 build/src/main.o
+ .text          0x0000000000000000       0x14 build/src/startup.o
+ .data          0x0000000000000000        0x0 build/src/startup.o
+ .bss           0x0000000000000000        0x0 build/src/startup.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/uart/src/uart_init.o
+ .text          0x0000000000000000        0x0 build/uart/src/uart_init.o
+ .data          0x0000000000000000        0x0 build/uart/src/uart_init.o
+ .bss           0x0000000000000000        0x0 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x8c8 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x8d build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x3c build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x9c build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x57 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x97 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x30d build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0xfd build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x58 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x1f build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x43 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x20 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x1a3 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x6a build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x1c build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x52 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0xd7 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x161 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0xef build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000      0x1df build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x4c build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x35 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x29 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x40 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x22 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x16 build/uart/src/uart_init.o
+ .debug_macro   0x0000000000000000       0x10 build/uart/src/uart_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/system/src/system_init.o
+ .text          0x0000000000000000        0x0 build/system/src/system_init.o
+ .data          0x0000000000000000        0x0 build/system/src/system_init.o
+ .bss           0x0000000000000000        0x0 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x8c8 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x8d build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x3c build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x9c build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x57 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x97 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x30d build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0xfd build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x58 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x1f build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x43 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x20 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x1a3 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x6a build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x1c build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x52 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0xd7 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x161 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0xef build/system/src/system_init.o
+ .debug_macro   0x0000000000000000      0x1df build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x4c build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x35 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x29 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x40 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x22 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x16 build/system/src/system_init.o
+ .debug_macro   0x0000000000000000       0x10 build/system/src/system_init.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .group         0x0000000000000000        0x8 build/cli/src/cli_communitcate.o
+ .text          0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
+ .data          0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
+ .bss           0x0000000000000000        0x0 build/cli/src/cli_communitcate.o
+ .text.readUartBuf
+                0x0000000000000000       0x14 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x8c8 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x8d build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x3c build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x9c build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x57 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x97 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x30d build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0xfd build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x58 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x1f build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x43 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x20 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x1a3 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x6a build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x1c build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x52 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0xd7 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x161 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0xef build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000      0x1df build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x4c build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x35 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x29 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x40 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x22 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x16 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000000000       0x10 build/cli/src/cli_communitcate.o
+ .data          0x0000000000000000        0x0 build/multi_task/src/context_switch.o
+ .bss           0x0000000000000000        0x0 build/multi_task/src/context_switch.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/multi_task/src/task.o
+ .text          0x0000000000000000        0x0 build/multi_task/src/task.o
+ .data          0x0000000000000000        0x0 build/multi_task/src/task.o
+ .bss           0x0000000000000000       0x50 build/multi_task/src/task.o
+ .text.task_init
+                0x0000000000000000       0x34 build/multi_task/src/task.o
+ .rodata        0x0000000000000000        0x8 build/multi_task/src/task.o
+ .text.task_spawn
+                0x0000000000000000       0x6c build/multi_task/src/task.o
+ .text.task_kill
+                0x0000000000000000        0xc build/multi_task/src/task.o
+ .debug_info    0x0000000000000000      0x9a8 build/multi_task/src/task.o
+ .debug_abbrev  0x0000000000000000      0x1e3 build/multi_task/src/task.o
+ .debug_aranges
+                0x0000000000000000       0x30 build/multi_task/src/task.o
+ .debug_ranges  0x0000000000000000       0x20 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000      0x27f build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000      0x8c8 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x22 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x22 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x40 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x8d build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x3c build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x9c build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x57 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x97 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000      0x30d build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0xfd build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x58 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x1f build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x43 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x20 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000      0x1a3 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x6a build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x1c build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x52 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x40 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x40 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0xd7 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000      0x161 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0xef build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000      0x1df build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x4c build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x35 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x29 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x40 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x22 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x16 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x10 build/multi_task/src/task.o
+ .debug_macro   0x0000000000000000       0x34 build/multi_task/src/task.o
+ .debug_line    0x0000000000000000      0x44b build/multi_task/src/task.o
+ .debug_str     0x0000000000000000     0x8047 build/multi_task/src/task.o
+ .comment       0x0000000000000000       0x26 build/multi_task/src/task.o
+ .debug_frame   0x0000000000000000       0x7c build/multi_task/src/task.o
+ .ARM.attributes
+                0x0000000000000000       0x33 build/multi_task/src/task.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .group         0x0000000000000000        0x8 build/common/src/lprintf.o
+ .text          0x0000000000000000        0x0 build/common/src/lprintf.o
+ .data          0x0000000000000000        0x0 build/common/src/lprintf.o
+ .bss           0x0000000000000000        0x0 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000      0x8c8 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x22 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x22 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0xef build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x6a build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000      0x1df build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x3c build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x9c build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x16 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x35 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000      0x30d build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x58 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x1f build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x43 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x20 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000      0x1a3 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x10 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x1c build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x52 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x40 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x10 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x40 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0xd7 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x16 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000      0x161 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x16 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x16 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x29 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x16 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x40 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x22 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x16 build/common/src/lprintf.o
+ .debug_macro   0x0000000000000000       0x10 build/common/src/lprintf.o
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .ARM.extab.text.__udivmoddi4
+                0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
  .text          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
  .data          0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
  .bss           0x0000000000000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
@@ -597,7 +1241,13 @@ Linker script and memory map
 
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/crt0.o
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/rdimon-crt0.o
+START GROUP
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libm.a
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a
+END GROUP
 LOAD build/src/main.o
 LOAD build/src/startup.o
 LOAD build/uart/src/uart_init.o
@@ -605,9 +1255,15 @@ LOAD build/system/src/system_init.o
 LOAD build/cli/src/cli_communitcate.o
 LOAD build/multi_task/src/context_switch.o
 LOAD build/multi_task/src/task.o
+LOAD build/common/src/lprintf.o
 START GROUP
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a
+END GROUP
+START GROUP
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/libc.a
+LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/../../../../arm-none-eabi/lib/librdimon.a
 END GROUP
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
 LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
@@ -622,115 +1278,196 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000188                . = ALIGN (0x4)
 
-.text           0x0000000008000188      0x2f0
+.text           0x0000000008000188     0x2170
                 0x0000000008000188                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000188       0x12 build/multi_task/src/context_switch.o
                 0x0000000008000188                activate
- *(.text*)
  *fill*         0x000000000800019a        0x2 
+ .text          0x000000000800019c      0x41c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+                0x000000000800019c                __aeabi_drsub
+                0x00000000080001a4                __aeabi_dsub
+                0x00000000080001a4                __subdf3
+                0x00000000080001a8                __adddf3
+                0x00000000080001a8                __aeabi_dadd
+                0x00000000080004b8                __aeabi_ui2d
+                0x00000000080004b8                __floatunsidf
+                0x00000000080004dc                __floatsidf
+                0x00000000080004dc                __aeabi_i2d
+                0x0000000008000504                __extendsfdf2
+                0x0000000008000504                __aeabi_f2d
+                0x0000000008000544                __aeabi_ul2d
+                0x0000000008000544                __floatundidf
+                0x0000000008000558                __floatdidf
+                0x0000000008000558                __aeabi_l2d
+ .text          0x00000000080005b8      0x49c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+                0x00000000080005b8                __aeabi_dmul
+                0x00000000080005b8                __muldf3
+                0x0000000008000848                __aeabi_ddiv
+                0x0000000008000848                __divdf3
+ .text          0x0000000008000a54      0x144 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+                0x0000000008000a54                __gtdf2
+                0x0000000008000a54                __gedf2
+                0x0000000008000a5c                __ltdf2
+                0x0000000008000a5c                __ledf2
+                0x0000000008000a64                __cmpdf2
+                0x0000000008000a64                __eqdf2
+                0x0000000008000a64                __nedf2
+                0x0000000008000aec                __aeabi_cdrcmple
+                0x0000000008000b08                __aeabi_cdcmple
+                0x0000000008000b08                __aeabi_cdcmpeq
+                0x0000000008000b20                __aeabi_dcmpeq
+                0x0000000008000b38                __aeabi_dcmplt
+                0x0000000008000b50                __aeabi_dcmple
+                0x0000000008000b68                __aeabi_dcmpge
+                0x0000000008000b80                __aeabi_dcmpgt
+ .text          0x0000000008000b98       0x5c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+                0x0000000008000b98                __fixdfsi
+                0x0000000008000b98                __aeabi_d2iz
+ .text          0x0000000008000bf4       0x54 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+                0x0000000008000bf4                __fixunsdfsi
+                0x0000000008000bf4                __aeabi_d2uiz
+ .text          0x0000000008000c48       0x3c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000008000c48                __aeabi_uldivmod
+ .text          0x0000000008000c84        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+                0x0000000008000c84                __aeabi_ldiv0
+                0x0000000008000c84                __aeabi_idiv0
+ .text          0x0000000008000c88       0x28 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+                0x0000000008000c88                __clzdi2
+ .text          0x0000000008000cb0       0x48 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
+                0x0000000008000cb0                __clzsi2
+ *(.text*)
  .text.deregister_tm_clones
-                0x000000000800019c       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008000cf8       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .text.register_tm_clones
-                0x00000000080001cc       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008000d28       0x38 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .text.__do_global_dtors_aux
-                0x0000000008000204       0x44 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008000d60       0x44 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .text.frame_dummy
-                0x0000000008000248       0x5c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
- .text.first    0x00000000080002a4       0x10 build/src/main.o
-                0x00000000080002a4                first
- .text.main     0x00000000080002b4       0x40 build/src/main.o
-                0x00000000080002b4                main
+                0x0000000008000da4       0x5c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+ .text.first    0x0000000008000e00       0x14 build/src/main.o
+                0x0000000008000e00                first
+ .text.main     0x0000000008000e14       0x38 build/src/main.o
+                0x0000000008000e14                main
  .text.Reset_Handler
-                0x00000000080002f4       0x40 build/src/startup.o
-                0x00000000080002f4                Reset_Handler
+                0x0000000008000e4c       0x40 build/src/startup.o
+                0x0000000008000e4c                Reset_Handler
  .text.InitUART
-                0x0000000008000334       0x74 build/uart/src/uart_init.o
-                0x0000000008000334                InitUART
+                0x0000000008000e8c       0x74 build/uart/src/uart_init.o
+                0x0000000008000e8c                InitUART
  .text.initialize_core
-                0x00000000080003a8        0xc build/system/src/system_init.o
-                0x00000000080003a8                initialize_core
- .text.print    0x00000000080003b4       0x48 build/cli/src/cli_communitcate.o
-                0x00000000080003b4                print
- .text.write_uart
-                0x00000000080003fc       0x4c build/cli/src/cli_communitcate.o
-                0x00000000080003fc                write_uart
+                0x0000000008000f00        0xc build/system/src/system_init.o
+                0x0000000008000f00                initialize_core
+ .text.printUart
+                0x0000000008000f0c       0x48 build/cli/src/cli_communitcate.o
+                0x0000000008000f0c                printUart
+ .text.print    0x0000000008000f54       0x40 build/cli/src/cli_communitcate.o
+                0x0000000008000f54                print
+ .text.writeUartBuf
+                0x0000000008000f94       0x4c build/cli/src/cli_communitcate.o
+                0x0000000008000f94                writeUartBuf
+ .text._out_buffer
+                0x0000000008000fe0       0x2c build/common/src/lprintf.o
+ .text._out_null
+                0x000000000800100c       0x1a build/common/src/lprintf.o
+ .text._strlen  0x0000000008001026       0x2c build/common/src/lprintf.o
+ .text._is_digit
+                0x0000000008001052       0x2c build/common/src/lprintf.o
+ .text._atoi    0x000000000800107e       0x48 build/common/src/lprintf.o
+ .text._ntoa_format
+                0x00000000080010c6      0x20c build/common/src/lprintf.o
+ .text._ntoa_long
+                0x00000000080012d2       0xc0 build/common/src/lprintf.o
+ .text._ntoa_long_long
+                0x0000000008001392       0xce build/common/src/lprintf.o
+ .text._ftoa    0x0000000008001460      0x448 build/common/src/lprintf.o
+ .text._lvsnprintf
+                0x00000000080018a8      0x8c8 build/common/src/lprintf.o
+ .text.lvsnprintf
+                0x0000000008002170       0x2c build/common/src/lprintf.o
+                0x0000000008002170                lvsnprintf
+ .text.__udivmoddi4
+                0x000000000800219c      0x12c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+                0x000000000800219c                __udivmoddi4
  *(.glue_7)
- .glue_7        0x0000000008000448        0x0 linker stubs
+ .glue_7        0x00000000080022c8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008000448        0x0 linker stubs
+ .glue_7t       0x00000000080022c8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008000448        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+ .eh_frame      0x00000000080022c8        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  *(.init)
- .init          0x0000000008000448        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
-                0x0000000008000448                _init
- .init          0x0000000008000454        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+ .init          0x00000000080022c8        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
+                0x00000000080022c8                _init
+ .init          0x00000000080022d4        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
  *(.fini)
- .fini          0x0000000008000460        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
-                0x0000000008000460                _fini
- .fini          0x000000000800046c        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
-                0x0000000008000478                . = ALIGN (0x4)
-                0x0000000008000478                _etext = .
+ .fini          0x00000000080022e0        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
+                0x00000000080022e0                _fini
+ .fini          0x00000000080022ec        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+                0x00000000080022f8                . = ALIGN (0x4)
+                0x00000000080022f8                _etext = .
 
-.vfp11_veneer   0x0000000008000478        0x0
- .vfp11_veneer  0x0000000008000478        0x0 linker stubs
+.vfp11_veneer   0x00000000080022f8        0x0
+ .vfp11_veneer  0x00000000080022f8        0x0 linker stubs
 
-.v4_bx          0x0000000008000478        0x0
- .v4_bx         0x0000000008000478        0x0 linker stubs
+.v4_bx          0x00000000080022f8        0x0
+ .v4_bx         0x00000000080022f8        0x0 linker stubs
 
-.iplt           0x0000000008000478        0x0
- .iplt          0x0000000008000478        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+.iplt           0x00000000080022f8        0x0
+ .iplt          0x00000000080022f8        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
-.rodata         0x0000000008000478       0x14
-                0x0000000008000478                . = ALIGN (0x4)
+.rodata         0x00000000080022f8       0x90
+                0x00000000080022f8                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008000478       0x13 build/src/main.o
+ .rodata        0x00000000080022f8       0x3d build/src/main.o
+ *fill*         0x0000000008002335        0x3 
+ .rodata        0x0000000008002338       0x50 build/common/src/lprintf.o
  *(.rodata*)
-                0x000000000800048c                . = ALIGN (0x4)
- *fill*         0x000000000800048b        0x1 
+                0x0000000008002388                . = ALIGN (0x4)
 
-.rel.dyn        0x000000000800048c        0x0
- .rel.iplt      0x000000000800048c        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-
-.ARM.extab      0x000000000800048c        0x0
-                0x000000000800048c                . = ALIGN (0x4)
+.ARM.extab      0x0000000008002388        0x0
+                0x0000000008002388                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000800048c                . = ALIGN (0x4)
+                0x0000000008002388                . = ALIGN (0x4)
 
-.ARM            0x000000000800048c        0x0
-                0x000000000800048c                . = ALIGN (0x4)
-                0x000000000800048c                __exidx_start = .
+.ARM            0x0000000008002388        0x8
+                0x0000000008002388                . = ALIGN (0x4)
+                0x0000000008002388                __exidx_start = .
  *(.ARM.exidx*)
-                0x000000000800048c                __exidx_end = .
-                0x000000000800048c                . = ALIGN (0x4)
+ .ARM.exidx.text.__udivmoddi4
+                0x0000000008002388        0x8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+                0x0000000008002390                __exidx_end = .
+                0x0000000008002390                . = ALIGN (0x4)
 
-.preinit_array  0x000000000800048c        0x0
-                0x000000000800048c                . = ALIGN (0x4)
-                0x000000000800048c                PROVIDE (__preinit_array_start, .)
+.rel.dyn        0x0000000008002390        0x0
+ .rel.iplt      0x0000000008002390        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+
+.preinit_array  0x0000000008002390        0x0
+                0x0000000008002390                . = ALIGN (0x4)
+                0x0000000008002390                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x000000000800048c                PROVIDE (__preinit_array_end, .)
-                0x000000000800048c                . = ALIGN (0x4)
+                0x0000000008002390                PROVIDE (__preinit_array_end, .)
+                0x0000000008002390                . = ALIGN (0x4)
 
-.init_array     0x000000000800048c        0x4
-                0x000000000800048c                . = ALIGN (0x4)
-                0x000000000800048c                PROVIDE (__init_array_start, .)
+.init_array     0x0000000008002390        0x4
+                0x0000000008002390                . = ALIGN (0x4)
+                0x0000000008002390                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000800048c        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-                0x0000000008000490                PROVIDE (__init_array_end, .)
-                0x0000000008000490                . = ALIGN (0x4)
+ .init_array    0x0000000008002390        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008002394                PROVIDE (__init_array_end, .)
+                0x0000000008002394                . = ALIGN (0x4)
 
-.fini_array     0x0000000008000490        0x4
-                0x0000000008000490                . = ALIGN (0x4)
-                0x0000000008000490                PROVIDE (__fini_array_start, .)
+.fini_array     0x0000000008002394        0x4
+                0x0000000008002394                . = ALIGN (0x4)
+                0x0000000008002394                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008000490        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-                0x0000000008000494                PROVIDE (__fini_array_end, .)
-                0x0000000008000494                . = ALIGN (0x4)
-                0x0000000008000494                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008002394        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008002398                PROVIDE (__fini_array_end, .)
+                0x0000000008002398                . = ALIGN (0x4)
+                0x0000000008002398                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x0 load address 0x0000000008000494
+.data           0x0000000020000000        0x0 load address 0x0000000008002398
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -738,21 +1475,21 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.jcr            0x0000000020000000        0x0 load address 0x0000000008000494
+.jcr            0x0000000020000000        0x0 load address 0x0000000008002398
  .jcr           0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
 .tm_clone_table
-                0x0000000020000000        0x0 load address 0x0000000008000494
+                0x0000000020000000        0x0 load address 0x0000000008002398
  .tm_clone_table
                 0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .tm_clone_table
                 0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
 
-.igot.plt       0x0000000020000000        0x0 load address 0x0000000008000494
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008002398
  .igot.plt      0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
                 0x0000000020000000                . = ALIGN (0x4)
 
-.bss            0x0000000020000000       0x1c load address 0x0000000008000494
+.bss            0x0000000020000000       0x1c load address 0x0000000008002398
                 0x0000000020000000                _sbss = .
                 0x0000000020000000                __bss_start__ = _sbss
  *(.bss)
@@ -768,10 +1505,10 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x000000002000001c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000001c      0x404 load address 0x0000000008000494
+                0x000000002000001c      0x404 load address 0x0000000008002398
                 0x0000000020000020                . = ALIGN (0x8)
  *fill*         0x000000002000001c        0x4 
-                [!provide]                        PROVIDE (end, .)
+                0x0000000020000020                PROVIDE (end, .)
                 [!provide]                        PROVIDE (_end, .)
                 0x0000000020000020                . = (. + _Min_Heap_Size)
                 0x0000000020000420                . = (. + _Min_Stack_Size)
@@ -803,9 +1540,31 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
  .ARM.attributes
                 0x0000000000000137       0x25 build/multi_task/src/context_switch.o
  .ARM.attributes
-                0x000000000000015c       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
+                0x000000000000015c       0x33 build/common/src/lprintf.o
  .ARM.attributes
-                0x000000000000018c       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+                0x000000000000018f       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000000000001a7       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000000000001bf       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000000000001d7       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x00000000000001ef       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x0000000000000207       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x000000000000021f       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000000000000024f       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000267       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .ARM.attributes
+                0x000000000000027f       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x0000000000000297       0x30 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
+ .ARM.attributes
+                0x00000000000002c7       0x18 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
 OUTPUT(build/kernel.elf elf32-littlearm)
 
 .comment        0x0000000000000000       0x25
@@ -815,25 +1574,49 @@ OUTPUT(build/kernel.elf elf32-littlearm)
  .comment       0x0000000000000025       0x26 build/uart/src/uart_init.o
  .comment       0x0000000000000025       0x26 build/system/src/system_init.o
  .comment       0x0000000000000025       0x26 build/cli/src/cli_communitcate.o
+ .comment       0x0000000000000025       0x26 build/common/src/lprintf.o
+ .comment       0x0000000000000025       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
  .comment       0x0000000000000025       0x26 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
 
-.debug_info     0x0000000000000000     0x2455
- .debug_info    0x0000000000000000      0x90f build/src/main.o
- .debug_info    0x000000000000090f       0x63 build/src/startup.o
- .debug_info    0x0000000000000972      0x8ac build/uart/src/uart_init.o
- .debug_info    0x000000000000121e      0x8ac build/system/src/system_init.o
- .debug_info    0x0000000000001aca      0x916 build/cli/src/cli_communitcate.o
- .debug_info    0x00000000000023e0       0x75 build/multi_task/src/context_switch.o
+.debug_info     0x0000000000000000     0x4589
+ .debug_info    0x0000000000000000      0x91a build/src/main.o
+ .debug_info    0x000000000000091a       0x63 build/src/startup.o
+ .debug_info    0x000000000000097d      0x8b7 build/uart/src/uart_init.o
+ .debug_info    0x0000000000001234      0x8b7 build/system/src/system_init.o
+ .debug_info    0x0000000000001aeb      0x9a2 build/cli/src/cli_communitcate.o
+ .debug_info    0x000000000000248d       0x75 build/multi_task/src/context_switch.o
+ .debug_info    0x0000000000002502     0x10be build/common/src/lprintf.o
+ .debug_info    0x00000000000035c0       0xbe /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x000000000000367e       0xbe /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x000000000000373c       0xbe /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x00000000000037fa       0xbe /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .debug_info    0x00000000000038b8       0xbe /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_info    0x0000000000003976       0xb9 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000000000003a2f      0x923 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x0000000000004352       0xbd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000000000440f       0xbd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .debug_info    0x00000000000044cc       0xbd /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
 
-.debug_abbrev   0x0000000000000000      0x619
- .debug_abbrev  0x0000000000000000      0x18e build/src/main.o
- .debug_abbrev  0x000000000000018e       0x14 build/src/startup.o
- .debug_abbrev  0x00000000000001a2      0x163 build/uart/src/uart_init.o
- .debug_abbrev  0x0000000000000305      0x163 build/system/src/system_init.o
- .debug_abbrev  0x0000000000000468      0x19d build/cli/src/cli_communitcate.o
- .debug_abbrev  0x0000000000000605       0x14 build/multi_task/src/context_switch.o
+.debug_abbrev   0x0000000000000000      0xb46
+ .debug_abbrev  0x0000000000000000      0x19f build/src/main.o
+ .debug_abbrev  0x000000000000019f       0x14 build/src/startup.o
+ .debug_abbrev  0x00000000000001b3      0x174 build/uart/src/uart_init.o
+ .debug_abbrev  0x0000000000000327      0x174 build/system/src/system_init.o
+ .debug_abbrev  0x000000000000049b      0x201 build/cli/src/cli_communitcate.o
+ .debug_abbrev  0x000000000000069c       0x14 build/multi_task/src/context_switch.o
+ .debug_abbrev  0x00000000000006b0      0x28d build/common/src/lprintf.o
+ .debug_abbrev  0x000000000000093d       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x0000000000000951       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x0000000000000965       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x0000000000000979       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .debug_abbrev  0x000000000000098d       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_abbrev  0x00000000000009a1       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x00000000000009b5      0x155 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000000000000b0a       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000000000000b1e       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .debug_abbrev  0x0000000000000b32       0x14 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
 
-.debug_aranges  0x0000000000000000       0xd8
+.debug_aranges  0x0000000000000000      0x290
  .debug_aranges
                 0x0000000000000000       0x28 build/src/main.o
  .debug_aranges
@@ -843,77 +1626,139 @@ OUTPUT(build/kernel.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000068       0x20 build/system/src/system_init.o
  .debug_aranges
-                0x0000000000000088       0x30 build/cli/src/cli_communitcate.o
+                0x0000000000000088       0x38 build/cli/src/cli_communitcate.o
  .debug_aranges
-                0x00000000000000b8       0x20 build/multi_task/src/context_switch.o
+                0x00000000000000c0       0x20 build/multi_task/src/context_switch.o
+ .debug_aranges
+                0x00000000000000e0       0x70 build/common/src/lprintf.o
+ .debug_aranges
+                0x0000000000000150       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x0000000000000170       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x0000000000000190       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .debug_aranges
+                0x00000000000001b0       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .debug_aranges
+                0x00000000000001d0       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_aranges
+                0x00000000000001f0       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x0000000000000210       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_aranges
+                0x0000000000000230       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x0000000000000250       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .debug_aranges
+                0x0000000000000270       0x20 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
 
-.debug_ranges   0x0000000000000000       0x58
+.debug_ranges   0x0000000000000000       0xd0
  .debug_ranges  0x0000000000000000       0x18 build/src/main.o
  .debug_ranges  0x0000000000000018       0x10 build/uart/src/uart_init.o
  .debug_ranges  0x0000000000000028       0x10 build/system/src/system_init.o
- .debug_ranges  0x0000000000000038       0x20 build/cli/src/cli_communitcate.o
+ .debug_ranges  0x0000000000000038       0x28 build/cli/src/cli_communitcate.o
+ .debug_ranges  0x0000000000000060       0x60 build/common/src/lprintf.o
+ .debug_ranges  0x00000000000000c0       0x10 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
 
-.debug_macro    0x0000000000000000     0x2169
- .debug_macro   0x0000000000000000      0x234 build/src/main.o
- .debug_macro   0x0000000000000234      0x8c8 build/src/main.o
- .debug_macro   0x0000000000000afc       0x22 build/src/main.o
- .debug_macro   0x0000000000000b1e       0x22 build/src/main.o
- .debug_macro   0x0000000000000b40       0x40 build/src/main.o
- .debug_macro   0x0000000000000b80       0x8d build/src/main.o
- .debug_macro   0x0000000000000c0d       0x3c build/src/main.o
- .debug_macro   0x0000000000000c49       0x9c build/src/main.o
- .debug_macro   0x0000000000000ce5       0x16 build/src/main.o
- .debug_macro   0x0000000000000cfb       0x57 build/src/main.o
- .debug_macro   0x0000000000000d52       0x97 build/src/main.o
- .debug_macro   0x0000000000000de9      0x30d build/src/main.o
- .debug_macro   0x00000000000010f6       0xfd build/src/main.o
- .debug_macro   0x00000000000011f3       0x10 build/src/main.o
- .debug_macro   0x0000000000001203       0x58 build/src/main.o
- .debug_macro   0x000000000000125b       0x1f build/src/main.o
- .debug_macro   0x000000000000127a       0x43 build/src/main.o
- .debug_macro   0x00000000000012bd       0x20 build/src/main.o
- .debug_macro   0x00000000000012dd      0x1a3 build/src/main.o
- .debug_macro   0x0000000000001480       0x10 build/src/main.o
- .debug_macro   0x0000000000001490       0x6a build/src/main.o
- .debug_macro   0x00000000000014fa       0x1c build/src/main.o
- .debug_macro   0x0000000000001516       0x52 build/src/main.o
- .debug_macro   0x0000000000001568       0x40 build/src/main.o
- .debug_macro   0x00000000000015a8       0x10 build/src/main.o
- .debug_macro   0x00000000000015b8       0x40 build/src/main.o
- .debug_macro   0x00000000000015f8       0xd7 build/src/main.o
- .debug_macro   0x00000000000016cf       0x16 build/src/main.o
- .debug_macro   0x00000000000016e5      0x161 build/src/main.o
- .debug_macro   0x0000000000001846       0xef build/src/main.o
- .debug_macro   0x0000000000001935      0x1df build/src/main.o
- .debug_macro   0x0000000000001b14       0x10 build/src/main.o
- .debug_macro   0x0000000000001b24       0x16 build/src/main.o
- .debug_macro   0x0000000000001b3a       0x40 build/src/main.o
- .debug_macro   0x0000000000001b7a       0x22 build/src/main.o
- .debug_macro   0x0000000000001b9c       0x16 build/src/main.o
- .debug_macro   0x0000000000001bb2      0x1e5 build/uart/src/uart_init.o
- .debug_macro   0x0000000000001d97      0x1e9 build/system/src/system_init.o
- .debug_macro   0x0000000000001f80      0x1e9 build/cli/src/cli_communitcate.o
+.debug_macro    0x0000000000000000     0x2b12
+ .debug_macro   0x0000000000000000      0x2e1 build/src/main.o
+ .debug_macro   0x00000000000002e1      0x8c8 build/src/main.o
+ .debug_macro   0x0000000000000ba9       0x22 build/src/main.o
+ .debug_macro   0x0000000000000bcb       0x22 build/src/main.o
+ .debug_macro   0x0000000000000bed       0x40 build/src/main.o
+ .debug_macro   0x0000000000000c2d       0x8d build/src/main.o
+ .debug_macro   0x0000000000000cba       0x3c build/src/main.o
+ .debug_macro   0x0000000000000cf6       0x9c build/src/main.o
+ .debug_macro   0x0000000000000d92       0x16 build/src/main.o
+ .debug_macro   0x0000000000000da8       0x57 build/src/main.o
+ .debug_macro   0x0000000000000dff       0x97 build/src/main.o
+ .debug_macro   0x0000000000000e96      0x30d build/src/main.o
+ .debug_macro   0x00000000000011a3       0xfd build/src/main.o
+ .debug_macro   0x00000000000012a0       0x10 build/src/main.o
+ .debug_macro   0x00000000000012b0       0x58 build/src/main.o
+ .debug_macro   0x0000000000001308       0x1f build/src/main.o
+ .debug_macro   0x0000000000001327       0x43 build/src/main.o
+ .debug_macro   0x000000000000136a       0x20 build/src/main.o
+ .debug_macro   0x000000000000138a      0x1a3 build/src/main.o
+ .debug_macro   0x000000000000152d       0x10 build/src/main.o
+ .debug_macro   0x000000000000153d       0x6a build/src/main.o
+ .debug_macro   0x00000000000015a7       0x1c build/src/main.o
+ .debug_macro   0x00000000000015c3       0x52 build/src/main.o
+ .debug_macro   0x0000000000001615       0x40 build/src/main.o
+ .debug_macro   0x0000000000001655       0x10 build/src/main.o
+ .debug_macro   0x0000000000001665       0x40 build/src/main.o
+ .debug_macro   0x00000000000016a5       0xd7 build/src/main.o
+ .debug_macro   0x000000000000177c       0x16 build/src/main.o
+ .debug_macro   0x0000000000001792      0x161 build/src/main.o
+ .debug_macro   0x00000000000018f3       0xef build/src/main.o
+ .debug_macro   0x00000000000019e2      0x1df build/src/main.o
+ .debug_macro   0x0000000000001bc1       0x4c build/src/main.o
+ .debug_macro   0x0000000000001c0d       0x16 build/src/main.o
+ .debug_macro   0x0000000000001c23       0x35 build/src/main.o
+ .debug_macro   0x0000000000001c58       0x16 build/src/main.o
+ .debug_macro   0x0000000000001c6e       0x29 build/src/main.o
+ .debug_macro   0x0000000000001c97       0x16 build/src/main.o
+ .debug_macro   0x0000000000001cad       0x40 build/src/main.o
+ .debug_macro   0x0000000000001ced       0x22 build/src/main.o
+ .debug_macro   0x0000000000001d0f       0x16 build/src/main.o
+ .debug_macro   0x0000000000001d25       0x10 build/src/main.o
+ .debug_macro   0x0000000000001d35       0x34 build/src/main.o
+ .debug_macro   0x0000000000001d69      0x29e build/uart/src/uart_init.o
+ .debug_macro   0x0000000000002007      0x2a2 build/system/src/system_init.o
+ .debug_macro   0x00000000000022a9      0x2a8 build/cli/src/cli_communitcate.o
+ .debug_macro   0x0000000000002551      0x2d7 build/common/src/lprintf.o
+ .debug_macro   0x0000000000002828       0x87 build/common/src/lprintf.o
+ .debug_macro   0x00000000000028af       0x51 build/common/src/lprintf.o
+ .debug_macro   0x0000000000002900       0x58 build/common/src/lprintf.o
+ .debug_macro   0x0000000000002958      0x174 build/common/src/lprintf.o
+ .debug_macro   0x0000000000002acc       0x46 build/common/src/lprintf.o
 
-.debug_line     0x0000000000000000      0xfeb
- .debug_line    0x0000000000000000      0x403 build/src/main.o
- .debug_line    0x0000000000000403       0x59 build/src/startup.o
- .debug_line    0x000000000000045c      0x396 build/uart/src/uart_init.o
- .debug_line    0x00000000000007f2      0x3b5 build/system/src/system_init.o
- .debug_line    0x0000000000000ba7      0x3f1 build/cli/src/cli_communitcate.o
- .debug_line    0x0000000000000f98       0x53 build/multi_task/src/context_switch.o
+.debug_line     0x0000000000000000     0x2190
+ .debug_line    0x0000000000000000      0x43d build/src/main.o
+ .debug_line    0x000000000000043d       0x59 build/src/startup.o
+ .debug_line    0x0000000000000496      0x3e9 build/uart/src/uart_init.o
+ .debug_line    0x000000000000087f      0x408 build/system/src/system_init.o
+ .debug_line    0x0000000000000c87      0x444 build/cli/src/cli_communitcate.o
+ .debug_line    0x00000000000010cb       0x53 build/multi_task/src/context_switch.o
+ .debug_line    0x000000000000111e      0x7e3 build/common/src/lprintf.o
+ .debug_line    0x0000000000001901      0x188 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000000000001a89      0x19c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000000000001c25       0xcc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x0000000000001cf1       0x92 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .debug_line    0x0000000000001d83       0x90 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_line    0x0000000000001e13       0x7b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000000000001e8e      0x17a /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000000000002008       0x7b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000002083       0x85 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .debug_line    0x0000000000002108       0x88 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
 
-.debug_str      0x0000000000000000     0x7b5f
- .debug_str     0x0000000000000000     0x7adb build/src/main.o
-                                       0x7d3a (size before relaxing)
- .debug_str     0x0000000000007adb       0x1e build/uart/src/uart_init.o
-                                       0x7cd5 (size before relaxing)
- .debug_str     0x0000000000007af9       0x29 build/system/src/system_init.o
-                                       0x7ce0 (size before relaxing)
- .debug_str     0x0000000000007b22       0x3d build/cli/src/cli_communitcate.o
-                                       0x7cfa (size before relaxing)
+.debug_str      0x0000000000000000     0x8bc3
+ .debug_str     0x0000000000000000     0x7d42 build/src/main.o
+                                       0x7fda (size before relaxing)
+ .debug_str     0x0000000000007d42       0x1e build/uart/src/uart_init.o
+                                       0x7ee7 (size before relaxing)
+ .debug_str     0x0000000000007d60       0x29 build/system/src/system_init.o
+                                       0x7ef2 (size before relaxing)
+ .debug_str     0x0000000000007d89       0x62 build/cli/src/cli_communitcate.o
+                                       0x7f52 (size before relaxing)
+ .debug_str     0x0000000000007deb      0x287 build/common/src/lprintf.o
+                                       0x81cf (size before relaxing)
+ .debug_str     0x0000000000008072      0xb51 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+                                        0xc31 (size before relaxing)
 
-.debug_frame    0x0000000000000000      0x12c
+.debug_frame    0x0000000000000000      0x5a8
  .debug_frame   0x0000000000000000       0x4c build/src/main.o
  .debug_frame   0x000000000000004c       0x30 build/uart/src/uart_init.o
  .debug_frame   0x000000000000007c       0x2c build/system/src/system_init.o
- .debug_frame   0x00000000000000a8       0x84 build/cli/src/cli_communitcate.o
+ .debug_frame   0x00000000000000a8       0xc0 build/cli/src/cli_communitcate.o
+ .debug_frame   0x0000000000000168      0x1c4 build/common/src/lprintf.o
+ .debug_frame   0x000000000000032c       0xac /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000000003d8       0x50 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000000000000428       0xc4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000000000004ec       0x24 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x0000000000000510       0x24 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x0000000000000534       0x2c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000000000000560       0x48 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+
+.debug_loc      0x0000000000000000      0x19e
+ .debug_loc     0x0000000000000000      0x19e /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)

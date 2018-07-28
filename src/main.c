@@ -14,9 +14,7 @@
 
 void first(void)
 {
-	//char *string = "SAEED Hello, World!\n\r";
-
-	print("7aeed\n");
+  print("SAEED testing new print function. Number: %d, Character: %c\n", 2, 'A');
 	while(1);
 }
 
@@ -35,18 +33,15 @@ void first(void)
  *
  *
  ***************************************************/
-int main(void) {
-
+int main(void)
+{
 	initialize_core();
 
 	/* tasks are 256*4 bytes in size */
 	uint32_t stack_1[STACK_SIZE_WORDS];
 	uint32_t *stack_1_start = stack_1 + STACK_SIZE_WORDS - ARM_STACK_POPS;        /* place activate params near end of task stack: (256 - 16). */
 	stack_1_start[0] = 3;                                                         /* control register param to transition into psp stack */
-  stack_1_start[1] = (unsigned int)&first;                                      /* func address parameter */
-
-	/* transition from kernel mode to user mode */
-	print("7Starting\n");
+  stack_1_start[1] = (uint32_t)&first;                                          /* func address parameter */
 
 	/* kernel switches to next active task context */
 	/* kernel gives control to task  */

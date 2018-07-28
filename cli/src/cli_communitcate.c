@@ -25,22 +25,56 @@
  *       depending on the serial monitor interface and
  *       the environment it runs on.
  ***************************************************/
-void print(char *string)
+void printUart(char* string)
 {
   ACCESS(USART2_DR) &= ~(0xFF);
 
   /* Write CR before writing string to UART buf */
-  write_uart('\r');
+  writeUartBuf('\r');
 
   while(*string)
 	{
-    write_uart(*string);
+    writeUartBuf(*string);
     string++;  // Advance the pointer to the next character
 	}
 
   /* Write CR after done writing string to UART buf */
-  write_uart('\r');
+  writeUartBuf('\r');
 }
+
+/***************************************************
+ * print
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note:
+ *
+ ***************************************************/
+ void print(char* formatBuf,...)
+ {
+   char str[MAX_STR_BUFFER];
+
+   /* pt1. handle variable args */
+   va_list varArgs;
+
+  /* pt2. handle variable args */
+   va_start(varArgs, formatBuf);
+
+   /* format the string args */
+   lvsnprintf(str, (MAX_STR_BUFFER - 1), formatBuf, varArgs);
+
+   /* send formated string to UART send-buffer */
+   printUart(str);
+
+   /* pt3. handle variable args */
+   va_end(varArgs);
+ }
 
 /***************************************************
  * read_uart
@@ -57,7 +91,7 @@ void print(char *string)
  *
  *
  ***************************************************/
-bool read_uart(char **buf)
+bool readUartBuf(char **buf)
 {
 
   /* buf returns a string */
@@ -80,7 +114,7 @@ bool read_uart(char **buf)
  *
  *
  ***************************************************/
- bool write_uart(char c)
+ bool writeUartBuf(char c)
  {
    // See pg 548 of the ST RM0383 document for more info on the USART registers.
    while((ACCESS(USART2_SR) & (1 << 6)) == 0 || (ACCESS(USART2_SR) & (1 << 7)) == 0);  // Wait until transmission is complete
