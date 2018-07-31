@@ -15,7 +15,7 @@ SOURCES += system/src/system_init.c
 SOURCES += cli/src/cli_communitcate.c
 SOURCES += multi_task/src/context_switch.s
 SOURCES += multi_task/src/task.c
-SOURCES += common/src/lprintf.c
+SOURCES += common/src/lsprintf.c
 
 ## Include C headers
 INCLUDES += -Icommon/include \
@@ -34,7 +34,6 @@ OBJS = $(addprefix $(BUILDDIR)/, $(addsuffix .o, $(basename $(SOURCES))))
 CFLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO
 CFLAGS += -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -I. $(INCLUDES) -Werror
 LFLAGS = -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -mfpu=fpv4-sp-d16 -T"LinkerScript.ld" -Wl,-Map=build/out.map -Wl,--gc-sections
-LFLAGS += --specs=rdimon.specs -Wl,--start-group -lgcc -lc -lm -lrdimon -Wl,--end-group
 
 ELF = $(BUILDDIR)/$(NAME).elf
 HEX = $(BUILDDIR)/$(NAME).hex

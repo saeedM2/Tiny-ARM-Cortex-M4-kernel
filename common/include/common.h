@@ -16,7 +16,7 @@
 
 /* submodule includes */
 #include "cli_communitcate.h"
-#include "lprintf.h"
+#include "lsprintf.h"
 
 /* macro function definitions */
 

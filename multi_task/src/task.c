@@ -9,12 +9,12 @@
 
 /* global vars */
 
-PRIVATE struct task_t task_arr[MAX_TASK_NUMBER];
+PRIVATE struct task_t task_arr[MAX_TASK_NUMBER];                                /* array of task objects supported by the kernel */
 
 /* function definitions */
 
 /***************************************************
- * task_init
+ * Name: task_init
  *
  * Description: initializes tasks states to "TASK_READY"
  *
@@ -28,7 +28,7 @@ PRIVATE struct task_t task_arr[MAX_TASK_NUMBER];
  *
  *
  ***************************************************/
-void task_init()
+void taskInit()
 {
   for(int i = 0; i < MAX_TASK_NUMBER; i++)
   {
@@ -37,9 +37,9 @@ void task_init()
 }
 
 /***************************************************
- * task_spawn
+ * Name: task_spawn
  *
- * Description: creates new task
+ * Description: creates new task.
  *
  * Input:
  *
@@ -47,39 +47,67 @@ void task_init()
  *
  * Return:
  *
- * Note:
+ * Note: the stack grows downwards for the ARM CORTEX-M arch
+ *       hence "*.sp--" is used in this func definition.
  *
  *
  ***************************************************/
 
-bool task_spawn()
+bool taskSpawn(void (*fcnp)(void))
 {
   uint8_t taskSize = 0;
 
+  /* find a free task */
   while( taskSize <= MAX_TASK_NUMBER && task_arr[taskSize].state != TASK_FREE )
   {
     taskSize++;
   }
 
+  /* handle no free task available */
   if( taskSize >= MAX_TASK_NUMBER && task_arr[taskSize].state != TASK_FREE)
   {
-      print("ERROR: ");
+      print("ERROR: cannot create new task because max alloted tasks has been reached\ncurrent tasks active = %d, max tasks allowed = %u , task_arr[taskSize].state = %d\n",
+             taskSize, MAX_TASK_NUMBER,task_arr[taskSize].state);
 
       return false;
   }
 
-  /* manually allocate task stack */
-  task_arr[taskSize].sp = (void*)(MAX_SP_ADDRESS - (MAX_SP_SIZE_BYTES*taskSize));
+  /* manually allocate virtual asending task stack */
+  task_arr[taskSize].asp = (void*)(MAX_SP_ADDRESS - (MAX_SP_SIZE_WORDS*taskSize));
 
-  /* populate stack frame with vals for debugging purposes */
-  //task_arr[taskSize].sp =
+  /* setup initial stack frame for debugging purposes */
+
+  /* software stack (manually stacked and popped during context switch) */
+  *(task_arr[taskSize].asp--) = 4;                                /* R4 */
+  *(task_arr[taskSize].asp--) = 5;                                /* R5 */
+  *(task_arr[taskSize].asp--) = 6;                                /* R6 */
+  *(task_arr[taskSize].asp--) = 7;                                /* R7 */
+  *(task_arr[taskSize].asp--) = 8;                                /* R8 */
+  *(task_arr[taskSize].asp--) = 9;                                /* R9 */
+  *(task_arr[taskSize].asp--) = 10;                               /* R10 */
+  *(task_arr[taskSize].asp--) = 11;                               /* R11 */
+
+  /* hardware stack (saved by cpu automatically) */
+  *(task_arr[taskSize].asp--) = 0;                                /* R0 */
+  *(task_arr[taskSize].asp--) = 1;                                /* R1 */
+  *(task_arr[taskSize].asp--) = 2;                                /* R2 */
+  *(task_arr[taskSize].asp--) = 3;                                /* R3 */
+  *(task_arr[taskSize].asp--) = 12;                               /* R12 (IP) */
+  *(task_arr[taskSize].asp--) = 0;                                /* LR */
+
+  /* parameters passed to context switch routine (activate) */
+  *(task_arr[taskSize].asp--) = (uint32_t)fcnp;                   /* PC to function pointer */
+  *(task_arr[taskSize].asp) = SET_PSP_MASK;                       /* PSP control register mask bits  */
+
+  task_arr[taskSize].state = TASK_READY;
 
   return true;
 }
 
 /***************************************************
  *
- * task_kill
+ * Name: taskKill
+ *
  * Description:
  *
  * Input:
@@ -92,7 +120,50 @@ bool task_spawn()
  *
  *
  ***************************************************/
-void task_kill()
+void taskKill()
 {
 
+}
+
+/***************************************************
+ *
+ * Name: taskReady
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note:
+ *
+ *
+ ***************************************************/
+bool taskReady(struct task_t* taskReady)
+{
+    int8_t taskSize = 0;
+
+    while(taskSize <= MAX_TASK_NUMBER)
+    {
+      if(task_arr[taskSize].state == TASK_READY)
+      {
+        task_arr[taskSize].state = TASK_RUNNING;
+        *taskReady = task_arr[taskSize];
+
+        return true;
+      }
+    }
+
+    if(taskSize >= MAX_TASK_NUMBER && task_arr[taskSize].state != TASK_READY)
+    {
+      print("ERROR: no task ready to run.\ncurrent task number = %u, max allowed tasks = %u, task_arr[taskSize].state = %d\n",
+             taskSize, MAX_TASK_NUMBER, task_arr[taskSize].state);
+
+      return false;
+    }
+
+    /* default state*/
+    return false;
 }

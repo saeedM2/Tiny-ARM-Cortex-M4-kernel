@@ -32,7 +32,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include "lprintf.h"
+#include "lsprintf.h"
 
 
 // ntoa conversion buffer size, this must be big enough to hold

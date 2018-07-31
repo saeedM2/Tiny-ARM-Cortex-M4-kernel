@@ -9,4 +9,4 @@
 
 /* function declarations */
 
-void initialize_core(void);
+void initializeCore(void);

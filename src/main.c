@@ -35,17 +35,28 @@ void first(void)
  ***************************************************/
 int main(void)
 {
-	initialize_core();
+  struct task_t taskR;
 
-	/* tasks are 256*4 bytes in size */
-	uint32_t stack_1[STACK_SIZE_WORDS];
-	uint32_t *stack_1_start = stack_1 + STACK_SIZE_WORDS - ARM_STACK_POPS;        /* place activate params near end of task stack: (256 - 16). */
-	stack_1_start[0] = 3;                                                         /* control register param to transition into psp stack */
-  stack_1_start[1] = (uint32_t)&first;                                          /* func address parameter */
+  /* initialize core services */
+	initializeCore();
 
-	/* kernel switches to next active task context */
-	/* kernel gives control to task  */
-	activate(stack_1_start);
+  /* initialize task table */
+  taskInit();
+
+  /* create first task */
+  if ( !taskSpawn(&first) )
+  {
+      return false;
+  }
+
+  /* ready the task to run */
+  if( !taskReady(&taskR) )
+  {
+    return false;
+  }
+
+  print("SAEED1\n");
+  activate(taskR.asp);
 
 	while(1); /* we can't exit */
 	return 0;
