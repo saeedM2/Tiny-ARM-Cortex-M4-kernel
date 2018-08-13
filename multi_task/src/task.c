@@ -30,8 +30,9 @@ PRIVATE struct task_t task_arr[MAX_TASK_NUMBER];                                
  ***************************************************/
 void taskInit()
 {
-  for(int i = 0; i < MAX_TASK_NUMBER; i++)
+  for(int i = 0; i <= MAX_TASK_NUMBER; i++)
   {
+    task_arr[i].asp = NULL;
     task_arr[i].state = TASK_FREE;
   }
 }
@@ -72,8 +73,8 @@ bool taskSpawn(void (*fcnp)(void))
       return false;
   }
 
-  /* manually allocate virtual asending task stack */
-  task_arr[taskSize].asp = (void*)(MAX_SP_ADDRESS - (MAX_SP_SIZE_WORDS*taskSize));
+  /* manually allocate virtual asending stack for each task */
+  task_arr[taskSize].asp = (void*)(MAX_SP_ADDRESS - (MAX_SP_SIZE_WORDS*taskSize));  /* managing stack space */
 
   /* setup initial stack frame for debugging purposes */
 
@@ -96,8 +97,8 @@ bool taskSpawn(void (*fcnp)(void))
   *(task_arr[taskSize].asp--) = 0;                                /* LR */
 
   /* parameters passed to context switch routine (activate) */
-  *(task_arr[taskSize].asp--) = (uint32_t)fcnp;                   /* PC to function pointer */
-  *(task_arr[taskSize].asp) = SET_PSP_MASK;                       /* PSP control register mask bits  */
+  *(task_arr[taskSize].asp--) = (uint32_t)fcnp;                                 /* SP to function pointer */
+  *(task_arr[taskSize].asp) = SET_PSP_MASK;                                     /* PSP control register mask bits */
 
   task_arr[taskSize].state = TASK_READY;
 
@@ -167,3 +168,47 @@ bool taskReady(struct task_t* taskReady)
     /* default state*/
     return false;
 }
+
+/***************************************************
+ *
+ * Name: taskCurrRunning
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note:
+ *
+ *
+ ***************************************************/
+ bool taskCurrRunning(struct task_t* currTask)
+ {
+   int8_t taskSize = 0;
+
+   /* find the current task running */
+   while(taskSize <= MAX_TASK_NUMBER)
+   {
+     if(task_arr[taskSize].state == TASK_RUNNING)
+     {
+       *currTask = task_arr[taskSize];
+
+       return true;
+     }
+
+      taskSize++;
+   }
+
+   if(taskSize >= MAX_TASK_NUMBER && task_arr[taskSize].state != TASK_RUNNING)
+   {
+     print("ERROR: no running task detected.\ncurrent task number = %u, max allowed tasks = %u, task_arr[taskSize].state = %d\n",
+           taskSize, MAX_TASK_NUMBER, task_arr[taskSize].state);
+
+    return false;
+   }
+
+   return false;
+ }

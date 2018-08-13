@@ -23,14 +23,15 @@
 /***************************************************
  * ACCESS
  *
- * Description:   macro function for setting address of register
+ * Description:   macro function accessing peripheral address
+ *                safely using volatile
  *
  ***************************************************/
 #define ACCESS(address)             *((volatile unsigned int*)(address))
 
 /* macro definitions */
 
-#define PRIVATE                     static      /* contain scope of function and vars to a particular file */
+#define PRIVATE                     static      /* impose scope of function and vars to a particular file */
 
 
 

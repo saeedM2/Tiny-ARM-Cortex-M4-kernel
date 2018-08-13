@@ -16,13 +16,14 @@ SOURCES += cli/src/cli_communitcate.c
 SOURCES += multi_task/src/context_switch.s
 SOURCES += multi_task/src/task.c
 SOURCES += common/src/lsprintf.c
+SOURCES += sys_call/src/syscall.s
 
 ## Include C headers
 INCLUDES += -Icommon/include \
-            -Igpio/include \
-					  -Iuart/include \
-					  -Ircc/include \
-					  -Iinterrupt/include \
+						-Igpio/include \
+						-Iuart/include \
+						-Ircc/include \
+						-Iinterrupt/include \
 						-Isystem/include \
 						-Icli/include \
 						-Imulti_task/include \
