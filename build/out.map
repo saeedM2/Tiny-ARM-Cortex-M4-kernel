@@ -790,7 +790,7 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000c0                . = ALIGN (0x4)
 
-.text           0x00000000080000c0     0x2550
+.text           0x00000000080000c0     0x2528
                 0x00000000080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000c0       0x18 build/src/startup.o
@@ -880,131 +880,131 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x0000000008000e58       0x74 build/uart/src/uart_init.o
                 0x0000000008000e58                InitUART
  .text.initializeCore
-                0x0000000008000ecc       0x34 build/system/src/system_init.o
+                0x0000000008000ecc        0xc build/system/src/system_init.o
                 0x0000000008000ecc                initializeCore
  .text.printUart
-                0x0000000008000f00       0x48 build/cli/src/cli_communitcate.o
-                0x0000000008000f00                printUart
- .text.print    0x0000000008000f48       0x40 build/cli/src/cli_communitcate.o
-                0x0000000008000f48                print
+                0x0000000008000ed8       0x48 build/cli/src/cli_communitcate.o
+                0x0000000008000ed8                printUart
+ .text.print    0x0000000008000f20       0x40 build/cli/src/cli_communitcate.o
+                0x0000000008000f20                print
  .text.writeUartBuf
-                0x0000000008000f88       0x4c build/cli/src/cli_communitcate.o
-                0x0000000008000f88                writeUartBuf
+                0x0000000008000f60       0x4c build/cli/src/cli_communitcate.o
+                0x0000000008000f60                writeUartBuf
  .text.taskInit
-                0x0000000008000fd4       0x3c build/multi_task/src/task.o
-                0x0000000008000fd4                taskInit
+                0x0000000008000fac       0x3c build/multi_task/src/task.o
+                0x0000000008000fac                taskInit
  .text.taskSpawn
-                0x0000000008001010      0x1c0 build/multi_task/src/task.o
-                0x0000000008001010                taskSpawn
+                0x0000000008000fe8      0x1c0 build/multi_task/src/task.o
+                0x0000000008000fe8                taskSpawn
  .text.taskReady
-                0x00000000080011d0       0x94 build/multi_task/src/task.o
-                0x00000000080011d0                taskReady
+                0x00000000080011a8       0x94 build/multi_task/src/task.o
+                0x00000000080011a8                taskReady
  .text.taskCurrRunning
-                0x0000000008001264       0x94 build/multi_task/src/task.o
-                0x0000000008001264                taskCurrRunning
+                0x000000000800123c       0x94 build/multi_task/src/task.o
+                0x000000000800123c                taskCurrRunning
  .text._out_buffer
-                0x00000000080012f8       0x2c build/common/src/lsprintf.o
+                0x00000000080012d0       0x2c build/common/src/lsprintf.o
  .text._out_null
-                0x0000000008001324       0x1a build/common/src/lsprintf.o
- .text._strlen  0x000000000800133e       0x2c build/common/src/lsprintf.o
+                0x00000000080012fc       0x1a build/common/src/lsprintf.o
+ .text._strlen  0x0000000008001316       0x2c build/common/src/lsprintf.o
  .text._is_digit
-                0x000000000800136a       0x2c build/common/src/lsprintf.o
- .text._atoi    0x0000000008001396       0x48 build/common/src/lsprintf.o
+                0x0000000008001342       0x2c build/common/src/lsprintf.o
+ .text._atoi    0x000000000800136e       0x48 build/common/src/lsprintf.o
  .text._ntoa_format
-                0x00000000080013de      0x20c build/common/src/lsprintf.o
+                0x00000000080013b6      0x20c build/common/src/lsprintf.o
  .text._ntoa_long
-                0x00000000080015ea       0xc0 build/common/src/lsprintf.o
+                0x00000000080015c2       0xc0 build/common/src/lsprintf.o
  .text._ntoa_long_long
-                0x00000000080016aa       0xce build/common/src/lsprintf.o
- .text._ftoa    0x0000000008001778      0x448 build/common/src/lsprintf.o
+                0x0000000008001682       0xce build/common/src/lsprintf.o
+ .text._ftoa    0x0000000008001750      0x448 build/common/src/lsprintf.o
  .text._lvsnprintf
-                0x0000000008001bc0      0x8c8 build/common/src/lsprintf.o
+                0x0000000008001b98      0x8c8 build/common/src/lsprintf.o
  .text.lvsnprintf
-                0x0000000008002488       0x2c build/common/src/lsprintf.o
-                0x0000000008002488                lvsnprintf
+                0x0000000008002460       0x2c build/common/src/lsprintf.o
+                0x0000000008002460                lvsnprintf
  .text.__udivmoddi4
-                0x00000000080024b4      0x12c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
-                0x00000000080024b4                __udivmoddi4
+                0x000000000800248c      0x12c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+                0x000000000800248c                __udivmoddi4
  *(.glue_7)
- .glue_7        0x00000000080025e0        0x0 linker stubs
+ .glue_7        0x00000000080025b8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000080025e0        0x0 linker stubs
+ .glue_7t       0x00000000080025b8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x00000000080025e0        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+ .eh_frame      0x00000000080025b8        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  *(.init)
- .init          0x00000000080025e0        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
-                0x00000000080025e0                _init
- .init          0x00000000080025ec        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+ .init          0x00000000080025b8        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
+                0x00000000080025b8                _init
+ .init          0x00000000080025c4        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
  *(.fini)
- .fini          0x00000000080025f8        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
-                0x00000000080025f8                _fini
- .fini          0x0000000008002604        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
-                0x0000000008002610                . = ALIGN (0x4)
-                0x0000000008002610                _etext = .
+ .fini          0x00000000080025d0        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crti.o
+                0x00000000080025d0                _fini
+ .fini          0x00000000080025dc        0xc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
+                0x00000000080025e8                . = ALIGN (0x4)
+                0x00000000080025e8                _etext = .
 
-.vfp11_veneer   0x0000000008002610        0x0
- .vfp11_veneer  0x0000000008002610        0x0 linker stubs
+.vfp11_veneer   0x00000000080025e8        0x0
+ .vfp11_veneer  0x00000000080025e8        0x0 linker stubs
 
-.v4_bx          0x0000000008002610        0x0
- .v4_bx         0x0000000008002610        0x0 linker stubs
+.v4_bx          0x00000000080025e8        0x0
+ .v4_bx         0x00000000080025e8        0x0 linker stubs
 
-.iplt           0x0000000008002610        0x0
- .iplt          0x0000000008002610        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+.iplt           0x00000000080025e8        0x0
+ .iplt          0x00000000080025e8        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
-.rodata         0x0000000008002610      0x260
-                0x0000000008002610                . = ALIGN (0x4)
+.rodata         0x00000000080025e8      0x260
+                0x00000000080025e8                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008002610       0x90 build/src/main.o
- .rodata        0x00000000080026a0      0x17e build/multi_task/src/task.o
- *fill*         0x000000000800281e        0x2 
- .rodata        0x0000000008002820       0x50 build/common/src/lsprintf.o
+ .rodata        0x00000000080025e8       0x90 build/src/main.o
+ .rodata        0x0000000008002678      0x17e build/multi_task/src/task.o
+ *fill*         0x00000000080027f6        0x2 
+ .rodata        0x00000000080027f8       0x50 build/common/src/lsprintf.o
  *(.rodata*)
-                0x0000000008002870                . = ALIGN (0x4)
+                0x0000000008002848                . = ALIGN (0x4)
 
-.ARM.extab      0x0000000008002870        0x0
-                0x0000000008002870                . = ALIGN (0x4)
+.ARM.extab      0x0000000008002848        0x0
+                0x0000000008002848                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008002870                . = ALIGN (0x4)
+                0x0000000008002848                . = ALIGN (0x4)
 
-.ARM            0x0000000008002870        0x8
-                0x0000000008002870                . = ALIGN (0x4)
-                0x0000000008002870                __exidx_start = .
+.ARM            0x0000000008002848        0x8
+                0x0000000008002848                . = ALIGN (0x4)
+                0x0000000008002848                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x0000000008002870        0x8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
-                0x0000000008002878                __exidx_end = .
-                0x0000000008002878                . = ALIGN (0x4)
+                0x0000000008002848        0x8 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+                0x0000000008002850                __exidx_end = .
+                0x0000000008002850                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008002878        0x0
- .rel.iplt      0x0000000008002878        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+.rel.dyn        0x0000000008002850        0x0
+ .rel.iplt      0x0000000008002850        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
-.preinit_array  0x0000000008002878        0x0
-                0x0000000008002878                . = ALIGN (0x4)
-                0x0000000008002878                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0000000008002850        0x0
+                0x0000000008002850                . = ALIGN (0x4)
+                0x0000000008002850                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x0000000008002878                PROVIDE (__preinit_array_end, .)
-                0x0000000008002878                . = ALIGN (0x4)
+                0x0000000008002850                PROVIDE (__preinit_array_end, .)
+                0x0000000008002850                . = ALIGN (0x4)
 
-.init_array     0x0000000008002878        0x4
-                0x0000000008002878                . = ALIGN (0x4)
-                0x0000000008002878                PROVIDE (__init_array_start, .)
+.init_array     0x0000000008002850        0x4
+                0x0000000008002850                . = ALIGN (0x4)
+                0x0000000008002850                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008002878        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-                0x000000000800287c                PROVIDE (__init_array_end, .)
-                0x000000000800287c                . = ALIGN (0x4)
+ .init_array    0x0000000008002850        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008002854                PROVIDE (__init_array_end, .)
+                0x0000000008002854                . = ALIGN (0x4)
 
-.fini_array     0x000000000800287c        0x4
-                0x000000000800287c                . = ALIGN (0x4)
-                0x000000000800287c                PROVIDE (__fini_array_start, .)
+.fini_array     0x0000000008002854        0x4
+                0x0000000008002854                . = ALIGN (0x4)
+                0x0000000008002854                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800287c        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
-                0x0000000008002880                PROVIDE (__fini_array_end, .)
-                0x0000000008002880                . = ALIGN (0x4)
-                0x0000000008002880                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008002854        0x4 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
+                0x0000000008002858                PROVIDE (__fini_array_end, .)
+                0x0000000008002858                . = ALIGN (0x4)
+                0x0000000008002858                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x0 load address 0x0000000008002880
+.data           0x0000000020000000        0x0 load address 0x0000000008002858
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -1012,21 +1012,21 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.jcr            0x0000000020000000        0x0 load address 0x0000000008002880
+.jcr            0x0000000020000000        0x0 load address 0x0000000008002858
  .jcr           0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
 
 .tm_clone_table
-                0x0000000020000000        0x0 load address 0x0000000008002880
+                0x0000000020000000        0x0 load address 0x0000000008002858
  .tm_clone_table
                 0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
  .tm_clone_table
                 0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtend.o
 
-.igot.plt       0x0000000020000000        0x0 load address 0x0000000008002880
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008002858
  .igot.plt      0x0000000020000000        0x0 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtbegin.o
                 0x0000000020000000                . = ALIGN (0x4)
 
-.bss            0x0000000020000000       0x6c load address 0x0000000008002880
+.bss            0x0000000020000000       0x6c load address 0x0000000008002858
                 0x0000000020000000                _sbss = .
                 0x0000000020000000                __bss_start__ = _sbss
  *(.bss)
@@ -1043,7 +1043,7 @@ LOAD /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/crtn.o
                 0x000000002000006c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000006c      0x404 load address 0x0000000008002880
+                0x000000002000006c      0x404 load address 0x0000000008002858
                 0x0000000020000070                . = ALIGN (0x8)
  *fill*         0x000000002000006c        0x4 
                 [!provide]                        PROVIDE (end, .)
@@ -1267,26 +1267,26 @@ OUTPUT(build/kernel.elf elf32-littlearm)
  .debug_macro   0x0000000000002c49      0x174 build/common/src/lsprintf.o
  .debug_macro   0x0000000000002dbd       0x46 build/common/src/lsprintf.o
 
-.debug_line     0x0000000000000000     0x26ce
+.debug_line     0x0000000000000000     0x26cc
  .debug_line    0x0000000000000000      0x45e build/src/main.o
  .debug_line    0x000000000000045e       0x69 build/src/startup.o
  .debug_line    0x00000000000004c7      0x3ea build/uart/src/uart_init.o
- .debug_line    0x00000000000008b1      0x40b build/system/src/system_init.o
- .debug_line    0x0000000000000cbc      0x445 build/cli/src/cli_communitcate.o
- .debug_line    0x0000000000001101       0x5c build/multi_task/src/context_switch.o
- .debug_line    0x000000000000115d      0x4b6 build/multi_task/src/task.o
- .debug_line    0x0000000000001613      0x7e5 build/common/src/lsprintf.o
- .debug_line    0x0000000000001df8       0x47 build/sys_call/src/syscall.o
- .debug_line    0x0000000000001e3f      0x188 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x0000000000001fc7      0x19c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
- .debug_line    0x0000000000002163       0xcc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
- .debug_line    0x000000000000222f       0x92 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
- .debug_line    0x00000000000022c1       0x90 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
- .debug_line    0x0000000000002351       0x7b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x00000000000023cc      0x17a /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
- .debug_line    0x0000000000002546       0x7b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
- .debug_line    0x00000000000025c1       0x85 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
- .debug_line    0x0000000000002646       0x88 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
+ .debug_line    0x00000000000008b1      0x409 build/system/src/system_init.o
+ .debug_line    0x0000000000000cba      0x445 build/cli/src/cli_communitcate.o
+ .debug_line    0x00000000000010ff       0x5c build/multi_task/src/context_switch.o
+ .debug_line    0x000000000000115b      0x4b6 build/multi_task/src/task.o
+ .debug_line    0x0000000000001611      0x7e5 build/common/src/lsprintf.o
+ .debug_line    0x0000000000001df6       0x47 build/sys_call/src/syscall.o
+ .debug_line    0x0000000000001e3d      0x188 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000000000001fc5      0x19c /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000000000002161       0xcc /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x000000000000222d       0x92 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixdfsi.o)
+ .debug_line    0x00000000000022bf       0x90 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_line    0x000000000000234f       0x7b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x00000000000023ca      0x17a /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000000000002544       0x7b /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00000000000025bf       0x85 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzdi2.o)
+ .debug_line    0x0000000000002644       0x88 /home/saeed/toolchain/gcc6/installNative/lib/gcc/arm-none-eabi/6.3.0/libgcc.a(_clzsi2.o)
 
 .debug_str      0x0000000000000000     0x8e75
  .debug_str     0x0000000000000000     0x7f75 build/src/main.o

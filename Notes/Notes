@@ -1,0 +1,7 @@
+CFSR is a simple register in system memory. If you are using a CMSIS, you can get the value of that with SCB->CFSR. If you want in in assembly, you can simply get it like this:
+
+"ldr r0, =0xE000ED28"
+
+"ldr r1, [r0]"
+
+
