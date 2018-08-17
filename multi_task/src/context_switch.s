@@ -1,14 +1,19 @@
-
+/*********************************
+* context_switch.s
+*
+* Note: OS context switch module
+*
+**********************************/
 
 /* context_switch.s will simply load the task (function)
    address into the PC register for switching between
    kernel and user mode as well as switching tasks */
 
- /* MSP is main stack pointer and will be used at kernel and interrupt level
-    PSP is processor stack pointer and will be used at user level tasks */
+/* MSP is main stack pointer and will be used at kernel and interrupt level
+  PSP is processor stack pointer and will be used at user level tasks */
 
- /* MSP = 0xFFFFFFF9 (main stack) - Tells the handler to return using the MSP
-    PSP = 0xFFFFFFFD (process stack) - Tells the handler to return using the PSP */
+/* MSP = 0xFFFFFFF9 (main stack) - Tells the handler to return using the MSP
+  PSP = 0xFFFFFFFD (process stack) - Tells the handler to return using the PSP */
 
 /* CONTROL[nPRIV] - bit 0; thread mode privileged vs unprivileged access
                     set bit 0 to 0 = privileged.
@@ -22,27 +27,48 @@
 /* Note we allocated 256*4 = 1024 bytes of stack for all tasks
    each task occupies 16 words (16*4 = 64 bytes of mem space on RAM) */
 
+/* ARM assembly directives */
 
 .syntax unified
 .cpu cortex-m4
 .thumb
 
+/* ARM assembly definitions */
+
+
 /* Routines from asm.h */
+
 .global activate
+.global initActivate
 .global SVC_Handler
 
-/* context switch routine (thread mode) */
-activate:
+/***************************************************
+ * initActivate
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note: context switch routine (thread mode)
+ *       for initial system environment
+ *
+ ***************************************************/
+initActivate:
+
       cpsie i                                                                   /* enable IRQs to make the SVC call */
 
-      /* save kernel state into msp */
+      /* save kernel state using msp */
       mrs ip, psr
     	push {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}
 
       /* retrieve routine parameters and switch to the process stack psp */
       ldmfd r0!, {ip,lr}                                                        /* get control val and func address. r0 points to begining of an array address. r0! is used like a stack to pop */
       msr control, ip                                                           /* sp switched to process mode. toggling the bit control[1], we can switch between psp and msp */
-      isb                                                                       /* When changing the stack pointer, software must use an ISB instruction immediately after the MSR instruction. his ensures that instructions after the ISB execute using the new stack pointer. See ISB. */
+      isb                                                                       /* When changing the stack pointer, software must use an ISB instruction immediately after the MSR instruction. */
       msr psp, r0                                                               /* sp now points to local function vars */
 
       /* software stack frame. load user state */
@@ -53,18 +79,62 @@ activate:
       /* jump to user task*/
       bx lr
 
-/* supervisor call (handler mode) */
-.thumb_func
+/***************************************************
+ * activate
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note: after first activate we're no longer
+ *       using msp by default
+ *
+ ***************************************************/
+activate:
+
+      /* save kernel state using msp */
+      mrs ip, psr
+      push {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}
+
+      /* load previous task state */
+      ldmia r0!, {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}
+
+      msr psp, r0
+
+      /* jump back into task */
+      bx lr
+
+/***************************************************
+ * SVC_Handler
+ *
+ * Description:
+ *
+ * Input:
+ *
+ * Output:
+ *
+ * Return:
+ *
+ * Note: supervisor call (handler mode)
+ *
+ *
+ ***************************************************/
+.thumb_func                                                                     /* indicate this exception is running in thumb state */
 SVC_Handler:
+
       /* automatically use the msp as the sp when entering handler mode */
 
-      /* save user state */
+      /* save user state. Note: lr reg contains addr of calling fun */
       mrs r0, psp
-      stmdb r0!, {r4, r5, r6, r7, r8, r9, r10, r11, lr}
+      stmdb r0!, {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}                         /* save where task left off. "activate" will return r0 (stack pointer) */
 
       /* load kernel state */
-      pop {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}
+      pop {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}                            /* load kernel state that was saved when we first entered activate */
       msr psr_nzcvq, ip
 
       /* back to the thread mode if no other active exception */
-      bx lr
+      bx lr                                                                     /* return into the function that called activate (calling fun ) */

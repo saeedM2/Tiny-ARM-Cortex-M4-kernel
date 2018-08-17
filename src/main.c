@@ -14,9 +14,13 @@
 
 void first(void)
 {
-  print("SAEED1 testing new print function. Number: %d, Character: %c\n", 2, 'A');
+  print("in user mode 1\n");
 
   /* return control back to kernel */
+  syscall();
+
+  print("In user mode 2\n");
+
   syscall();
 }
 
@@ -62,11 +66,12 @@ int main(void)
   {
     return false;
   }
-  print("SAEED3\n");
+  print("starting\n");
   /* start first task */
-  activate(task.asp);
-
-  print("SAEED4\n");
+  task.asp = initActivate(task.asp);
+  print("back to user mode\n");
+  task.asp = activate(task.asp);
+  print("Done\n");
 
 #if 0
 task.asp = NULL;

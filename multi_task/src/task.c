@@ -49,8 +49,9 @@ void taskInit()
  * Return:
  *
  * Note: the stack grows downwards for the ARM CORTEX-M arch
- *       hence "*.sp--" is used in this func definition.
- *
+ *       hence "*.sp--" is used in this func definition. The
+ *       PSP control register mask value is at top of the stack
+ *       when passed to activate task routine.
  *
  ***************************************************/
 

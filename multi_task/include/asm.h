@@ -5,7 +5,8 @@
 
 /* function declarations */
 
-void activate(uint32_t* task_stack);
+uint32_t* initActivate(uint32_t* task_stack);
+uint32_t* activate(uint32_t* task_stack);
 void syscall(void);
 
 #if 0
