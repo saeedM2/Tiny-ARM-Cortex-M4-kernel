@@ -32,7 +32,7 @@ void taskInit()
 {
   for(int i = 0; i <= MAX_TASK_NUMBER; i++)
   {
-    task_arr[i].asp = NULL;
+    task_arr[i].sp = NULL;
     task_arr[i].state = TASK_FREE;
   }
 }
@@ -48,10 +48,9 @@ void taskInit()
  *
  * Return:
  *
- * Note: the stack grows downwards for the ARM CORTEX-M arch
- *       hence "*.sp--" is used in this func definition. The
- *       PSP control register mask value is at top of the stack
- *       when passed to activate task routine.
+ * Note: due to how the context switch routines
+ *       were designed we changed the order of
+ *       registers by pointed by the ".sp", see below
  *
  ***************************************************/
 
@@ -75,31 +74,34 @@ bool taskSpawn(void (*fcnp)(void))
   }
 
   /* manually allocate virtual asending stack for each task */
-  task_arr[taskSize].asp = (void*)(MAX_SP_ADDRESS - (MAX_SP_SIZE_WORDS*taskSize));  /* managing stack space */
+  task_arr[taskSize].sp = (void*)(MAX_SP_ADDRESS - (MAX_SP_SIZE_WORDS*taskSize));  /* managing stack space */
 
   /* setup initial stack frame for debugging purposes */
 
-  /* software stack (manually stacked and popped during context switch) */
-  *(task_arr[taskSize].asp--) = 4;                                /* R4 */
-  *(task_arr[taskSize].asp--) = 5;                                /* R5 */
-  *(task_arr[taskSize].asp--) = 6;                                /* R6 */
-  *(task_arr[taskSize].asp--) = 7;                                /* R7 */
-  *(task_arr[taskSize].asp--) = 8;                                /* R8 */
-  *(task_arr[taskSize].asp--) = 9;                                /* R9 */
-  *(task_arr[taskSize].asp--) = 10;                               /* R10 */
-  *(task_arr[taskSize].asp--) = 11;                               /* R11 */
-
   /* hardware stack (saved by cpu automatically) */
-  *(task_arr[taskSize].asp--) = 0;                                /* R0 */
-  *(task_arr[taskSize].asp--) = 1;                                /* R1 */
-  *(task_arr[taskSize].asp--) = 2;                                /* R2 */
-  *(task_arr[taskSize].asp--) = 3;                                /* R3 */
-  *(task_arr[taskSize].asp--) = 12;                               /* R12 (IP) */
-  *(task_arr[taskSize].asp--) = 0;                                /* LR */
+  *(task_arr[taskSize].sp--) = 15;                                /* xPSR */
+  *(task_arr[taskSize].sp--) = 14;                                /* PC */
+  *(task_arr[taskSize].sp--) = 3;                                /* R3 */
+  *(task_arr[taskSize].sp--) = 2;                                /* R2 */
+  *(task_arr[taskSize].sp--) = 1;                                /* R1 */
+  *(task_arr[taskSize].sp--) = 0;                                /* R0 */
 
   /* parameters passed to context switch routine (activate) */
-  *(task_arr[taskSize].asp--) = (uint32_t)fcnp;                                 /* SP to function pointer */
-  *(task_arr[taskSize].asp) = SET_PSP_MASK;                                     /* PSP control register mask bits */
+  *(task_arr[taskSize].sp--) = (uint32_t)fcnp;                                 /* LR */
+  *(task_arr[taskSize].sp--) = SET_PSP_MASK;                                   /* IP */
+
+  /* software stack (manually stacked and popped during context switch) */
+  *(task_arr[taskSize].sp--) = 11;                                /* R11 */
+  *(task_arr[taskSize].sp--) = 10;                               /* R10 */
+  *(task_arr[taskSize].sp--) = 9;                                /* R9 */
+  *(task_arr[taskSize].sp--) = 8;                                /* R8 */
+  *(task_arr[taskSize].sp--) = 6;                                /* R6 */
+  *(task_arr[taskSize].sp--) = 7;                                /* R7 */
+  *(task_arr[taskSize].sp--) = 5;                               /* R5 */
+  *(task_arr[taskSize].sp) = 4;                               /* R4 */
+
+  /* note lr is also automatically saved by cpu during context switch but
+     we sometimes change lr manually, like when first call a task  */
 
   task_arr[taskSize].state = TASK_READY;
 
@@ -156,6 +158,8 @@ bool taskReady(struct task_t* taskReady)
 
         return true;
       }
+
+      taskSize++;
     }
 
     if(taskSize >= MAX_TASK_NUMBER && task_arr[taskSize].state != TASK_READY)

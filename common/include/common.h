@@ -13,10 +13,12 @@
  #include <stdint.h>
  #include <stdarg.h>
  #include <stdlib.h>
+ #include <stddef.h>
 
 /* submodule includes */
 #include "cli_communitcate.h"
 #include "lsprintf.h"
+#include "lmemcpy.h"
 
 /* macro function definitions */
 

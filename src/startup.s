@@ -153,6 +153,7 @@ g_pfnVectors:
 	.globl	Reset_Handler
 
   Default_Handler:
+      ldr ip, =0xE000ED28                                                       /* contains info about CFSR register and cause of faults */
       b   .
       .size   Default_Handler, . - Default_Handler
 

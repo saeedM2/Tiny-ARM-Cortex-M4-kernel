@@ -45,7 +45,7 @@
 /***************************************************
  * initActivate
  *
- * Description:
+ * Description: context switch routine for tasks
  *
  * Input:
  *
@@ -53,11 +53,11 @@
  *
  * Return:
  *
- * Note: context switch routine (thread mode)
- *       for initial system environment
+ * Note:
+ *
  *
  ***************************************************/
-initActivate:
+activate:
 
       cpsie i                                                                   /* enable IRQs to make the SVC call */
 
@@ -66,47 +66,19 @@ initActivate:
     	push {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}
 
       /* retrieve routine parameters and switch to the process stack psp */
-      ldmfd r0!, {ip,lr}                                                        /* get control val and func address. r0 points to begining of an array address. r0! is used like a stack to pop */
+      ldmia r0!, {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}                     /* get control val and func address. r0 points to begining of an array address. r0! is used like a stack to pop */
       msr control, ip                                                           /* sp switched to process mode. toggling the bit control[1], we can switch between psp and msp */
       isb                                                                       /* When changing the stack pointer, software must use an ISB instruction immediately after the MSR instruction. */
       msr psp, r0                                                               /* sp now points to local function vars */
 
       /* software stack frame. load user state */
-      pop {r4-r11}                                                              /* software stack frame pop - contains routine local vars */
+
 
       /* hardware stack frame. the cpu pops r0-r3, r12 (IP), LR, PC, xPSR automatically */
 
       /* jump to user task*/
       bx lr
 
-/***************************************************
- * activate
- *
- * Description:
- *
- * Input:
- *
- * Output:
- *
- * Return:
- *
- * Note: after first activate we're no longer
- *       using msp by default
- *
- ***************************************************/
-activate:
-
-      /* save kernel state using msp */
-      mrs ip, psr
-      push {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}
-
-      /* load previous task state */
-      ldmia r0!, {r4, r5, r6, r7, r8, r9, r10, r11, ip, lr}
-
-      msr psp, r0
-
-      /* jump back into task */
-      bx lr
 
 /***************************************************
  * SVC_Handler

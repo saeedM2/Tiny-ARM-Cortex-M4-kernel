@@ -29,7 +29,7 @@ enum task_state
 
 struct task_t
 {
-  uint32_t* asp;                                                                /* virtual asending (climbs up) task stack */
+  uint32_t* sp;                                                                 /* virtual task stack pointer */
   enum task_state state;                                                        /* state of a given task (free to be allocated, ready to run, currenlty running)*/
 };
 
