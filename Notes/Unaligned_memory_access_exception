@@ -1,0 +1,22 @@
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+1   1  1  1  1  1 0 1 0 0 1 0 0 0 0 0
+
+UsageFault_Handler () at src/startup.s:156
+156	      ldr ip, =0xE000ED28                                                       /* contains info about CFSR register and cause of faults */
+(gdb) n
+157	      ldr r1, [r0]
+(gdb)
+158	      isb
+(gdb) i r r1
+r1             0xfd200200	4246733312
+(gdb) p/b 0xfd200200
+Size letters are meaningless in "print" command.
+(gdb) p/t 0xfd200200
+$1 = 11111101001000000000001000000000
+(gdb)
+
+
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+1  1  1  1  1  0  0 1 0 0 1 0 0 0 0 0
+
+bit 8 triggered unaligned access

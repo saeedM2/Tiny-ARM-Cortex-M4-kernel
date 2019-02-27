@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+
+import os
+import subprocess
+
+def subProcessWrapper(commandString, fh, ):
+    if optimizeWrite == False:
+        process = subprocess.Popen(commandString, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    else:
+        process = subprocess.Popen(shlex.split(commandString), stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
+    out, err = process.communicate()
+    return out, err
+
+def exec_command(commandString, lane_ = None, logCriticalEnable = True, logAllEnable = False, logTimeEnable = False):
+    fh = None
+
+    # Overwrite log enable state from Jenkins parameter
+    if flags.logAllNvmeStatus == "True":
+        logAllEnable = True
+    if flags.logTimeNVMeCommands == "True":
+        logTimeEnable = True
+
+    if logAllEnable:
+        logging.info("Lane={}: {}".format(lane_, commandString))
+
+    if logTimeEnable == False or 'cdw' not in commandString:
+        if '0x81' in commandString:
+            out, err = undecorated(subProcessWrapper)(commandString, fh, True)
+        else:
+            out, err = undecorated(subProcessWrapper)(commandString, fh, False)
+    else:
+        if '0x81' in commandString:
+            fh = open("logs/write_time_exec.log", "a")
+        elif '0x82' in commandString:
+            fh = open("logs/read_time_exec.log", "a")
+        elif '0x85' in commandString:
+            fh = open("logs/setFeature_time_exec.log", "a")
+        elif '0x80' in commandString:
+            fh = open("logs/erase_time_exec.log", "a")
+
+        if '0x81' in commandString:
+            out, err = subProcessWrapper(commandString, fh, True)
+        else:
+            out, err = subProcessWrapper(commandString, fh, False)
+
+    commandData = out
+
+    # NOTE: return val in sterr not in stdout
+    if ("0x80" in commandString) or ("0x81" in commandString) or ("0x85" in commandString) or \
+        ("0x82" in commandString):
+        commandData = err.rstrip("\n")
+
+    if logAllEnable:
+        logging.info("Lane={}: {}".format(lane_, commandData))
+    elif logCriticalEnable:
+        if ('00000000' not in commandData and '' not in commandData) or \
+           ('Abort' in commandData) or ('ABORT_REQ' in commandData):
+           logging.info("Lane={}: {}".format(lane_, commandString))
+           logging.info("Lane={}: {}".format(lane_, commandData))
+
+    if 'Interrupted system call' in str(commandData):
+        raise Exception('NVME Host Command Timeout')
+    return commandData
