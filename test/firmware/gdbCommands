@@ -1,0 +1,12 @@
+set pagination off
+set logging file gdbLog
+set logging on
+
+# Connect to STM32 MCU
+tar extended-remote :4242
+
+# Upload the built object into MCU
+load ../../build/kernel.elf
+
+# Start the program
+continue
