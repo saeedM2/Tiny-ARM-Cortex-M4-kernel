@@ -50,8 +50,6 @@ def readUART(logger):
 
     killUART(serialDevice)
 
-    out = commonLib.exec_command("sudo chmod 666 {0} "
-                                 "&& sudo chown root:root {0}".format(serialDevice))
     ser = serial.Serial(serialDevice, 9600)
 
     while True:
