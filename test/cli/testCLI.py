@@ -38,9 +38,6 @@ def killUART(device):
   if isUARTSessionRunning(device):
     out = commonLib.exec_command("sudo kill {}".format(device))
 
-def int_to_str(i):
-    return '%06x'%((i+2**24)%2**24)
-
 def readUART(logger):
     logger.info("\n-----------Printing serial console logs-----------\n")
     if not commonLib.isStUtilRunning():
