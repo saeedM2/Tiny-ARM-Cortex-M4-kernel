@@ -2,47 +2,73 @@
 
 import sys
 import os
-import subprocess
 import traceback
+import serial
+import json
+import shutil
 
-os.chdir("../")
+import binascii
+import bitstring
+
+if not os.path.exists("logs/"):
+    os.makedirs("logs/")
+else:
+    shutil.rmtree("logs/")
+    os.makedirs("logs/")
+
 sys.path.append(os.getcwd())
-sys.path.append(os.path.abspath("common"))
+sys.path.append(os.path.abspath("../common"))
 
 import commonLib
 
 path = commonLib.exec_command("pwd")
 path = path.strip("\n")
 
-def gdbInstanciate():
-    global path
-    armGdb = "cd ../../build/ && arm-none-eabi-gdb kernel.elf"
-    gbdInstance = subprocess.Popen(armGdb,
-                                   stdin=subprocess.PIPE,
-                                   shell=True)
-    return gbdInstance
+commonLib.findDevice()
 
-# Global instance
-gdb = gdbInstanciate()
+def isUARTSessionRunning(device):
+  out = commonLib.exec_command("ps -ef | grep {}".format(device))
+  print out
+  if "grep" not in out:
+    return True
+  else:
+    return False
 
-def gbdWrite(command):
-    global gdb
-    command += "\n"
-    gdb.stdin.write(command)
+def killUART(device):
+  if isUARTSessionRunning(device):
+    out = commonLib.exec_command("sudo kill {}".format(device))
 
-def readUART():
-    gbd.stdin.write("")
-    commonLib.exec_command("(nohup st-util >)&")
+def int_to_str(i):
+    return '%06x'%((i+2**24)%2**24)
+
+def readUART(logger):
+    logger.info("\n-----------Printing serial console logs-----------\n")
+    if not commonLib.isStUtilRunning():
+      out = commonLib.exec_command("(st-util > stLog 2>&1)&")
+    print os.getcwd()
+
+    with open("config.json", "r") as jfile:
+      jdata = json.load(jfile)
+    serialDevice = jdata["device"]
+
+    killUART(serialDevice)
+
+    out = commonLib.exec_command("sudo chmod 666 {0} "
+                                 "&& sudo chown root:root {0}".format(serialDevice))
+    ser = serial.Serial(serialDevice, 9600)
+
+    while True:
+        data = ser.readline().rstrip()[2:].lstrip()
+        if data:
+            logger.info(data)
+            print "Serial output - " + data
+
 def main():
     try:
-        if "/cli" not in path:
-
-            msg = ("ERROR: exec_command() -"
-                   " build all faild.\n\nOutput msg:\n{}")
-            raise AssertionError(msg.format(path))
-
+      logger = commonLib.configLogger()
+      readUART(logger)
     except:
-        commonLib.print_now(traceback.print_exc())
+      logger.info(traceback.print_exc())
 
 if __name__ == "__main__":
    main()

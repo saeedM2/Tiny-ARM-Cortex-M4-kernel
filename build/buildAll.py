@@ -5,40 +5,63 @@ import subprocess
 import common
 import traceback
 
-path = common.exec_command("pwd")
-path = path.strip('\n')
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
-def bakeSrcCode():
-    global path
-    cmd = "cd .. && make all 2>&1 | tee -a {}/logs/buildLog"
+path = common.exec_command("pwd")
+path = path.strip("\n")
+
+def getBaseDir():
+    out = os.listdir(".")
+    while "Makefile" not in out:
+        os.chdir("..")
+        out = os.listdir(".")
+    else:
+        basePath = os.getcwd()
+        return basePath
+
+def bakeSrcCode(logger):
+    path = getBaseDir()
+    path = path + "/build"
+    cmd = "make all 2>&1 | tee -a {}/logs/buildLog"
     output = common.exec_command(cmd.format(path))
     if "text	   data	    bss	    dec	    hex	filename" not in output:
         msg = "ERROR: exec_command() - build all faild.\n\nOutput msg:\n{}"
-        raise AssertionError(msg.format(output))
-
-def uploadBinary():
-    cmd = "st-flash write kernel.bin 0x8000000 2>&1 | tee -a {}/logs/buildLog"
-    output = common.exec_command(cmd.format(path))
+        msgf = msg.format(output)
+        logger.info(msgf)
+        raise AssertionError(msgf)
+    else:
+        msg = "make all successful.\n"
+        logger.info(msg)
+        
+def uploadBinary(logger):
+    cmd = "st-flash write {}/kernel.bin 0x8000000 2>&1 | tee -a {}/logs/buildLog"
+    output = common.exec_command(cmd.format(path, dname))
     if "Flash written and verified! jolly good!" not in output:
         msg = "ERROR: exec_command() - build all faild.\n\nOutput msg:\n{}"
-        raise AssertionError(msg.format(output))
+        msgf = msg.format(output)
+        logger.info(msgf)
+        raise AssertionError(msgf)
+    else:
+        logger.info("Binary successfully written to flash.\n")
 
 def main():
     global path
 
-    common.init()
+    logger = common.configLogger()
+    common.init(logger)
 
     try:
-
         if "/build" not in path:
             msg = ("ERROR: exec_command() -"
                    " build all faild.\n\nOutput msg:\n{}")
-            raise AssertionError(.format(path))
-
-        bakeSrcCode()
-        uploadBinary()
+            msgf = msg.format(path)
+            logger.info(msgf)
+            raise AssertionError(msgf)
+        bakeSrcCode(logger)
     except:
-        common.print_now(traceback.print_exc())
+        logger.info(traceback.print_exc())
 
 if __name__ == "__main__":
    main()

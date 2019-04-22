@@ -5,17 +5,14 @@ import sys
 import subprocess
 import logging
 import traceback
+import glob
+import json 
 
 from undecorated import undecorated
 from functools import wraps
 
 def configLogger(name="test"):
-    abspath = os.path.abspath(__file__)
-    dname = os.path.dirname(abspath)
-    os.chdir(dname + "/..")
-    if not os.path.exists("logs/"):
-        os.makedirs("logs/")
-
+    # TODO: clear logs before starting 
     format = logging.Formatter(fmt="[%(asctime)s] "
                                    "%(levelname)-s - "
                                    "%(message)s",
@@ -30,12 +27,7 @@ def configLogger(name="test"):
     logger.addHandler(handler)
     return logger
 
-# Unbuffered print
-def print_now(text):
-    sys.stdout.write(str(text) + "\r\n")
-    sys.stdout.flush()
-
-def init():
+def init(logger):
     try:
         output = exec_command("rm logs/buildLog")
         if "" not in output:
@@ -43,7 +35,7 @@ def init():
                    " build all faild.\n\nOutput msg:\n{}")
             raise AssertionError(msg.format(output))
     except:
-        print_now(traceback.print_exc())
+        logger.info(traceback.print_exc())
 
 def timeit(f):
     @wraps(f)
@@ -110,7 +102,26 @@ def exec_command(commandString,
         raise Exception("NVME Host Command Timeout")
     return commandData
 
+# TODO: Remove this method if unused
 def flashBoard():
     gdbFile = "gdbCommands"
     # Need to test current dir of gdbFile to ensure it executes the command
     exec_command("arm-none-eabi-gdb -q -x {}".format(gdbFile))
+
+def isStUtilRunning():
+    out = exec_command("ps -aux | grep st-util").split('\n')
+    proc = out[0]
+    if "grep" not in proc:
+        return True
+    else:
+        return False
+
+def findDevice():
+    serialDevice = glob.glob("/dev/ttyUSB*")[0]
+    jdata = {}
+    print serialDevice
+    jdata = {"device":serialDevice}
+    print jdata
+    with open("config.json", "w") as jfile:
+      json.dump(jdata, jfile)
+

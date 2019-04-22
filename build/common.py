@@ -1,37 +1,47 @@
 #!/usr/bin/env python
 
 import os
+import sys
 import subprocess
 import logging
 import traceback
+import shutil
 
 from undecorated import undecorated
 from functools import wraps
 
-if not os.path.exists("logs/"):
-    os.makedirs("logs/")
-logging.basicConfig(filename="logs/debugMsg.log",
-                    format="%(asctime)s %(levelname)-8s %(message)s",
-                    level=logging.INFO,
-                    datefmt="%Y-%m-%d %H:%M:%S")
+def configLogger(name="test"):
+    # TODO: clear logs before starting 
 
-def init():
+    if os.path.exists("logs/"):
+        shutil.rmtree("logs/")
+    if not os.path.exists("logs/"):
+        os.makedirs("logs/")
+
+    format = logging.Formatter(fmt="[%(asctime)s] "
+                                   "%(levelname)-s - "
+                                   "%(message)s",
+                                  datefmt="%Y-%m-%d %H:%M:%S")
+
+    handler = logging.FileHandler("logs/scriptLog", mode="a")
+    handler.setFormatter(format)
+    screen_handler = logging.StreamHandler(stream=sys.stdout)
+    screen_handler.setFormatter(format)
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(handler)
+    return logger
+
+
+def init(logger):
     try:
         output = exec_command("rm logs/buildLog")
         if "" not in output:
-            msg ("ERROR: exec_command() -"
+            msg = ("ERROR: exec_command() -"
                  " build all faild.\n\nOutput msg:\n{}")
-            raise AssertionError(.format(output))
+            raise AssertionError(msg.format(output))
     except:
-        common.print_now(traceback.print_exc())
-
-# Unbuffered print
-def print_now(text):
-    try:
-        sys.stdout.write(str(text) + '\r\n')
-        sys.stdout.flush()
-    except:
-        pass
+        logger.info(traceback.print_exc())
 
 def timeit(f):
     @wraps(f)
