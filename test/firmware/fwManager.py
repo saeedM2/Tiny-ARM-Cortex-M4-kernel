@@ -53,6 +53,39 @@ def executeBinary():
                              "\n\n{}".format(out))
     return out
 
+# TODO: Change all os modules to paramiko
+# Need to place elf in specific remote folder
+# then execute bin there, via gdb
+def executeBinary_remote():
+    ssh = commonLib.sshOpen()
+    abspath = os.path.abspath(__file__)
+    dname = os.path.dirname(abspath)
+    os.chdir(dname)
+    killFW_remote()
+    out = commonLib.exec_command_remote("(sudo st-util > stLog 2>&1)&")
+    time.sleep(4)
+
+    with open("stLog") as output:
+        log = output.read()
+
+    status = True
+    if 'error' in log.lower():
+        status = False
+    assert status, ('ERROR - \n{}'.format(log))
+    
+    dirContent = os.listdir(".")
+    currDir = os.getcwd()
+    if "gdbCommands" not in dirContent:
+        assert "gdbCommands" in dirContent,\
+                "Error - missing gdbCommands file in dir\n{}".format(currDir)
+
+    out = commonLib.exec_command_remote("(arm-none-eabi-gdb -x gdbCommands)&", ssh)
+    if "error" in out.lower():
+        raise AssertionError("ERROR: executeBinary() - failed"
+                             "\n\n{}".format(out))
+    commonLib.sshClose()
+    return out
+
 def main():
     try:
         if argVars.build:

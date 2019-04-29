@@ -7,6 +7,7 @@ import logging
 import traceback
 import glob
 import json 
+import paramiko
 
 from undecorated import undecorated
 from functools import wraps
@@ -116,6 +117,15 @@ def isStUtilRunning():
     else:
         return False
 
+def isStUtilRunning_remote():
+    ssh = sshOpen()
+    out = exec_command_remote("ps -aux | grep st-util", ssh).split('\n')
+    proc = out[0]
+    if "grep" not in proc:
+        return True
+    else:
+        return False
+
 def findDevice():
     serialDevice = glob.glob("/dev/ttyUSB*")[0]
     jdata = {}
@@ -125,3 +135,25 @@ def findDevice():
     with open("config.json", "w") as jfile:
       json.dump(jdata, jfile)
 
+def sshOpen(host="192.168.1.74", usr="pi", passw="pi"):
+  client = paramiko.SSHClient()
+  client.load_system_host_keys()
+  client.connect(hostname=host, username=usr, password=passw)
+  return client
+
+def sshClose(ssh):
+  ssh.close()
+
+def exec_command_remote(cmd, ssh):
+  stdin, stdout, stderr = ssh.exec_command(cmd)
+  out = stdout.read()
+  err = stderr.read()
+  return (err + out)
+
+def findDeviceBySerial():
+  serialNum = "A50285BI"
+  ssh = sshOpen()
+  out = exec_command_remote("ls -l /dev/serial/by-id | grep {}".format(serialNum), ssh)
+  deviceIndex = out.split("ttyUSB")
+  sshClose(ssh)
+  return "/dev/ttyUSB{}".format(deviceIndex)
