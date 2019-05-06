@@ -80,30 +80,16 @@ def readUART_remote(logger, ssh, ftp_h):
     currentDir = os.getcwd()
 
     logger.info("current dir = {}".format(currentDir))
-    
-    serialDevice = commonLib.findDeviceBySerial()
-    logger.info("Found device: {}\n".format(serialDevice))
-    
-    jdata = {"device":serialDevice}
-    logger.info("jdata: {}".format(jdata))
-    with open("config.json", "w") as jfile:
-      json.dump(jdata, jfile)
-
-    commonLib.uploadFileToRemoteHostMainDir(logger, "config.json", currentDir)
-    commonLib.uploadFileToRemoteHostMainDir(logger, "remoteUART.py", currentDir)
-
-    logger.info("Listening to device {} on remote host...\n".format(serialDevice))
-    out = commonLib.exec_command_remote("sudo python remoteUART.py", ssh)
-    logger.info(out)
+    logger.info("Reading FW logs on remote host...\n")
 
     timeElapsed = time.time()
     sleepPeriod = 10
     timeoutPeriod = 60*60*2
 
-    ftp_h.open("/home/pi/fwLog")
+    remoteFile = ftp_h.open("/home/pi/fwLog")
     while (timeoutPeriod - timeElapsed):
-      for line in ftp_h:
-        print line
+      for line in remoteFile:
+        logger.info("FW Log entry: {}".format(line))
       logger.info("Polling logs in {}s".format(sleepPeriod))
       time.sleep(sleepPeriod)
       timeElapsed = time.time()
@@ -112,14 +98,14 @@ def readUART_remote(logger, ssh, ftp_h):
  
 def main():
     try:
-      ssh = commonLib.sshOpen()
-      ftp_h = sftpConnect()
       logger = commonLib.configLogger()
+      ssh = commonLib.sshOpen()
+      ftp_h = commonLib.sftpConnect()
       readUART_remote(logger, ssh, ftp_h)
     except:
-      logger.info(traceback.print_exc())
+      traceback.print_exc()
     finally:
       commonLib.sshClose(ssh)
-      commonLib.sftpClose(sftp)
+      commonLib.sftpClose(ftp_h)
 if __name__ == "__main__":
    main()
