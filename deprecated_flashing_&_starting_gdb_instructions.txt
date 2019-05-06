@@ -1,0 +1,37 @@
+// These instructions are old. The python scripts in test dir
+// have substantially automated these tedious steps and have 
+// abstracted away trivial details
+
+//uploading bin file into board
+st-flash write kernel.bin 0x8000000
+
+//Setting up GDB server/clients:
+st-util
+
+arm-none-eabi-gdb out.elf
+
+tar extended-remote :4242
+
+load out.elf
+
+continue
+
+disass 0x8000275,0x8000300
+
+
+// On rasberry pi host:
+sudo chmod 666 /dev/ttyUSB0
+chown root:root /dev/ttyUSB0
+cu -l /dev/ttyUSB0 -s 9600
+
+// Old python code saved here.
+// TODO: delete these if not needed anymore:
+# command = ("sudo chmod 666 {0} sudo chown root:root {0} (cat {0} -s 9600 >fwLog)&".format(serialDevice))
+# logger.info("\n\nCommand string:\n" + command + "\n")
+# out = commonLib.exec_command_remote(command, ssh)
+# logger.info("\n\nOutput:\n{}".format(out))
+# while True:
+#     data = ser.readline().rstrip()[2:].lstrip()
+#     if data:
+#         logger.info(data)
+#         logger.info("Serial output - " + data)

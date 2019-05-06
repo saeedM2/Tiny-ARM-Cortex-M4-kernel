@@ -6,6 +6,7 @@ import traceback
 import serial
 import json
 import shutil
+import time
 
 if not os.path.exists("logs/"):
     os.makedirs("logs/")
@@ -25,29 +26,32 @@ path = path.strip("\n")
 if 0:
   commonLib.findDevice()
 
-def isUARTSessionRunning(device):
+def isUARTSessionRunning(logger, device):
   out = commonLib.exec_command("ps -ef | grep {}".format(device))
-  print out
+  logger.info(out)
   if "grep" not in out:
     return True
   else:
     return False
 
-def isUARTSessionRunning_remote(device, ssh):
+def isUARTSessionRunning_remote(logger, device, ssh):
+  logger.info("Checking for any active remote UART sessions...\n")
   out = commonLib.exec_command_remote("ps -ef | grep {}".format(device), ssh)
-  print out
+  logger.info("\noutput:\n{}".format(out))
   if "grep" not in out:
+    logger.info("\nActive session found\n")
     return True
   else:
+    logger.info("No active session\n")
     return False
 
 def killUART(device):
   if isUARTSessionRunning(device):
     out = commonLib.exec_command("sudo kill {}".format(device))
 
-def killUART_remote(device):
+def killUART_remote(logger, device):
   ssh = commonLib.sshOpen()
-  if isUARTSessionRunning_remote(device, ssh):
+  if isUARTSessionRunning_remote(logger, device, ssh):
     out = commonLib.exec_command_remote("sudo kill {}".format(device), ssh)
   commonLib.sshClose(ssh)
 
@@ -55,7 +59,7 @@ def readUART_local(logger):
     logger.info("\n-----------Printing serial console logs-----------\n")
     if not commonLib.isStUtilRunning():
       out = commonLib.exec_command("(st-util > stLog 2>&1)&")
-    print os.getcwd()
+    logger.info(os.getcwd())
 
     with open("config.json", "r") as jfile:
       jdata = json.load(jfile)
@@ -69,42 +73,53 @@ def readUART_local(logger):
         data = ser.readline().rstrip()[2:].lstrip()
         if data:
             logger.info(data)
-            print "Serial output - " + data
+            logger.info("Serial output - " + data)
 
-def readUART_remote(logger):
+def readUART_remote(logger, ssh, ftp_h):
     logger.info("\n-----------Printing serial console logs-----------\n")
-    ssh = commonLib.sshOpen()
-    print 1
-    if not commonLib.isStUtilRunning_remote():
-      out = commonLib.exec_command_remote("(st-util > stLog 2>&1)&", ssh)
-    print os.getcwd()
-    print 2
-    serialDevice = commonLib.findDeviceBySerial()
-    print 3
-    killUART_remote(serialDevice)
-    print 3.5
-    command = ("sudo chmod 666 {0} && "
-               "sudo chown root:root {0} && "
-               "cat {0} -s 9600".format(serialDevice))
-    logger.info(command)
-    out = commonLib.exec_command_remote("\nOutput:\n{}".format(command), ssh)
-    logger.info(out)
-    print 4
-    while True:
-        data = ser.readline().rstrip()[2:].lstrip()
-        if data:
-            logger.info(data)
-            print "Serial output - " + data
-    commonLib.sshClose()
+    currentDir = os.getcwd()
 
+    logger.info("current dir = {}".format(currentDir))
+    
+    serialDevice = commonLib.findDeviceBySerial()
+    logger.info("Found device: {}\n".format(serialDevice))
+    
+    jdata = {"device":serialDevice}
+    logger.info("jdata: {}".format(jdata))
+    with open("config.json", "w") as jfile:
+      json.dump(jdata, jfile)
+
+    commonLib.uploadFileToRemoteHostMainDir(logger, "config.json", currentDir)
+    commonLib.uploadFileToRemoteHostMainDir(logger, "remoteUART.py", currentDir)
+
+    logger.info("Listening to device {} on remote host...\n".format(serialDevice))
+    out = commonLib.exec_command_remote("sudo python remoteUART.py", ssh)
+    logger.info(out)
+
+    timeElapsed = time.time()
+    sleepPeriod = 10
+    timeoutPeriod = 60*60*2
+
+    ftp_h.open("/home/pi/fwLog")
+    while (timeoutPeriod - timeElapsed):
+      for line in ftp_h:
+        print line
+      logger.info("Polling logs in {}s".format(sleepPeriod))
+      time.sleep(sleepPeriod)
+      timeElapsed = time.time()
+
+    killUART_remote(logger, serialDevice)
+ 
 def main():
     try:
+      ssh = commonLib.sshOpen()
+      ftp_h = sftpConnect()
       logger = commonLib.configLogger()
-      readUART_remote(logger)
+      readUART_remote(logger, ssh, ftp_h)
     except:
       logger.info(traceback.print_exc())
     finally:
-      ssh.close()
-
+      commonLib.sshClose(ssh)
+      commonLib.sftpClose(sftp)
 if __name__ == "__main__":
    main()

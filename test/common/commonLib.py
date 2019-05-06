@@ -8,12 +8,18 @@ import traceback
 import glob
 import json 
 import paramiko
+import pysftp
+import shutil
 
 from undecorated import undecorated
 from functools import wraps
 
 def configLogger(name="test"):
-    # TODO: clear logs before starting 
+    if os.path.exists("logs"):
+      shutil.rmtree("logs")
+
+    os.mkdir("logs")
+  
     format = logging.Formatter(fmt="[%(asctime)s] "
                                    "%(levelname)-s - "
                                    "%(message)s",
@@ -25,7 +31,12 @@ def configLogger(name="test"):
     screen_handler.setFormatter(format)
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
+    
+    # Print to file
     logger.addHandler(handler)
+    # Print to console 
+    logger.addHandler(screen_handler)
+
     return logger
 
 def init(logger):
@@ -117,15 +128,6 @@ def isStUtilRunning():
     else:
         return False
 
-def isStUtilRunning_remote():
-    ssh = sshOpen()
-    out = exec_command_remote("ps -aux | grep st-util", ssh).split('\n')
-    proc = out[0]
-    if "grep" not in proc:
-        return True
-    else:
-        return False
-
 def findDevice():
     serialDevice = glob.glob("/dev/ttyUSB*")[0]
     jdata = {}
@@ -150,10 +152,38 @@ def exec_command_remote(cmd, ssh):
   err = stderr.read()
   return (err + out)
 
+def exec_command_remote_background(cmd, ssh):
+  transport = ssh.get_transport()
+  channel = transport.open_session()
+  channel.exec_command(cmd)
+  return True
+
 def findDeviceBySerial():
   serialNum = "A50285BI"
   ssh = sshOpen()
   out = exec_command_remote("ls -l /dev/serial/by-id | grep {}".format(serialNum), ssh)
   deviceIndex = out.split("ttyUSB")
   sshClose(ssh)
-  return "/dev/ttyUSB{}".format(deviceIndex)
+  return "/dev/ttyUSB{}".format(deviceIndex[-1]).rstrip()
+
+def sftpConnect(host="192.168.1.74", usr="pi", passw="pi"):
+  sftp = pysftp.Connection(host, 
+                           username=usr,
+                           password=passw)
+  return sftp
+
+def sftpClose(sftp):
+  sftp.close()
+
+def sftpPut(sftp, src, dst):
+  sftp.put(src, dst)
+
+def uploadFileToRemoteHostMainDir(logger, fileName, currentDir):
+    sftp = sftpConnect()
+    logger.info("Uploading {} to remote host...".format(fileName))
+    src = currentDir + "/{}".format(fileName)
+    dest = "/home/pi/{}".format(fileName)
+    logger.info("\nsrc={}\ndest={}\n".format(src, dest))
+    sftpPut(sftp, src, dest)
+    logger.info("Done.")
+    sftpClose(sftp)
