@@ -9,7 +9,7 @@
 #define PSR_DEFAULT_MASK          0x21000000                                    /* see ARM cortex-M data sheet for register details*/
 #define MAX_TASK_NUMBER           10                                            /* max number of tasks allowed on this kernel */
 #define MAX_SP_ADDRESS            0x20001000                                    /* end of the RAM */
-#define MAX_SP_SIZE_WORDS         256                                           /* total task stack is 256 words in size (256*4 = 1024 bytes) */
+#define MAX_SP_SIZE_WORDS         256                                           /* each task stack is 256 words in size (256*4 = 1024 bytes) */
 #define INIT_SP_TASK_ADDRESS      (MAX_SP_ADDRESS - MAX_SP_SIZE_BYTES)          /* address of the first stack pointer */
 #define MAIN_RETURN               0xFFFFFFF9                                    /* Tells the handler to return using the MSP */
 #define THREAD_RETURN             0xFFFFFFFD                                    /* Tells the handler to return using the PSP */
