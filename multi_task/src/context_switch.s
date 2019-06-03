@@ -24,8 +24,7 @@
 /* thread mode can be privileged or underprivileged
    handler mode can only be privileged */
 
-/* Note we allocated 256*4 = 1024 bytes of stack for all tasks
-   each task occupies 16 words (16*4 = 64 bytes of mem space on RAM) */
+/* Note we allocated 256*4 = 1024 bytes of stack for each task*/
 
 /* ARM assembly directives */
 
